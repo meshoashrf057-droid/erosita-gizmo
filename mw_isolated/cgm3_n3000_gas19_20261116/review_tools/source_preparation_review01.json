@@ -1,0 +1,29 @@
+{
+  "schema": "gas19-alpha-source-preparation-review/v1",
+  "utc": "2026-11-17T08:54:38.657511+00:00",
+  "source_only": true,
+  "ast_pass": true,
+  "original_inverse_nested_ast_unchanged": true,
+  "original_rigid_particle_transform_unchanged": true,
+  "source_sha256": {
+    "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_gas19_20261116/review_tools/gas19_alpha_production_review01.py": "27430e9b7c03f36b5c2e8584a4977974d68bc1bd0d578aa2fb8a1d507034f31c",
+    "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_gas19_20261116/review_tools/gas19_alpha_review01.py": "c5f0bcd978eb7743cde7c9d996bad9fe133c1af702257ead779ba37e65187545",
+    "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_gas19_20261116/review_tools/gas19_alpha_runtime_review01.py": "f4dc3fe1106280f78e2e235135e37cffdd0cbfa259562dc64f176afab63ea0f2",
+    "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_gas19_20261116/review_tools/gas19_rigid_writer_review01.py": "afcf04500ad182ec0b84fc221d73176d8dd4280f5ebfd69f3d18d3549929544d"
+  },
+  "original_method_sha256": "a21056aacea0d800378249bef5912d842fc88d14e37b0ddfbeed6f77d4fa9bfa",
+  "writer_parent_sha256": "9d2dc0b4f63450bccae48fd14354cf192ed04b340d196874897c52af02bb08e2",
+  "no_proposal_generated": true,
+  "no_ic_generated": true,
+  "no_runtime_prepared": true,
+  "no_scientific_operation_executed": true,
+  "alpha": 0.3,
+  "max_position_step_kpc": 20,
+  "max_velocity_step_kms": 30,
+  "no_live_jacobian_or_probes": true,
+  "no_smoke": true,
+  "current_family": "gas19",
+  "global_lease": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/status/compute.flock",
+  "local_lease": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_gas19_20261116/status/compute.flock",
+  "production_entry": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_gas19_20261116/review_tools/gas19_alpha_production_review01.py"
+}

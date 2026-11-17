@@ -60,8 +60,103 @@
       "exit_code": 0,
       "stdout": "usage: allsky_xray_yt_v4_disk_masked_audit.py [-h]\n                                              [--snapshot-dir SNAPSHOT_DIR]\n                                              [--output-dir OUTPUT_DIR]\n                                              [--grid-dir GRID_DIR]\n                                              [--grid-radius-kpc GRID_RADIUS_KPC]\n                                              [--grid-n GRID_N]\n                                              [--nside NSIDE] [--n-los N_LOS]\n                                              [--los-min-kpc LOS_MIN_KPC]\n                                              [--los-max-kpc LOS_MAX_KPC]\n                                              [--pixel-chunk PIXEL_CHUNK]\n                                              [--sun-offset-kpc SUN_OFFSET_KPC SUN_OFFSET_KPC SUN_OFFSET_KPC]\n                                              [--disk-mask-half-height DISK_MASK_HALF_HEIGHT]\n                                              [--color-reference-height-kpc COLOR_REFERENCE_HEIGHT_KPC]\n                                              [--color-scale {offplane-max,offplane-percentile,allsky-percentile}]\n                                              [--color-percentile-min COLOR_PERCENTILE_MIN]\n                                              [--color-percentile-max COLOR_PERCENTILE_MAX]\n                                              [--bh-id BH_ID]\n                                              [--emin-kev EMIN_KEV]\n                                              [--emax-kev EMAX_KEV]\n                                              [--apec-data-dir APEC_DATA_DIR]\n                                              [--emissivity-reconstruction {luminosity,normalized}]\n                                              [--reuse-grid] [--reuse-allsky]\n                                              [--intensity-limits INTENSITY_LIMITS INTENSITY_LIMITS]\n                                              [--start START] [--stop STOP]\n                                              [--stride STRIDE]\n\nGIZMO -> yt/APEC -> BH-centered X-ray cube (v4-disk-masked-audit)\n-> Sun=(-8.29,0,0) kpc -> HEALPix LOS -> Mollweide全天球\n\nMetallicity：\n    Z/Zsun = Metallicity_00 / 0.02（不能累加 00--10，避免总量/元素重复计数）\n\n强度：\n    I_X = 1/(4*pi) * integral epsilon_X ds\n    F_X = sum(I_X * pixel_solid_angle)                 [erg/s/cm^2]\n    L_X = sum(pixel_solid_angle * integral epsilon_X*s^2 ds) [erg/s]\n    L_X 与 I_X 使用同一 cube、LOS 范围和盘面筛选；s 是到太阳的距离。\n    太阳位于延展发射源内部，不能用一个统一距离把 F_X 转为本征 L_X。\n\n坐标：\n    BH/GC = (0,0,0) kpc\n    Sun   = (-8.29,0,0) kpc\n    l=0   -> +x\n    l=90  -> +y\n    b=90  -> +z\n\n说明：\n    默认采集 BH 中心 ±40 kpc 的发射率，仅积分 |z|>=5 kpc 的发射。\n    主图、通量、光度使用同一高度筛选；默认保留的气体不等于气泡净辐射。\n    默认色标上限为筛选后全天图最大值，所有颜色使用 lg 强度。\n    同时记录未筛选、排除和保留的 LOS 光度，以及原始粒子 sum(epsilon*m/rho)。\n    L_LOS/L_voxel 检查射线积分；L_voxel/L_particles 检查场重建/网格影响。\n    这两个比值都不包含观测背景扣除，也不会强制光度归一到观测值。\n    默认用 yt scatter 按每粒子光度作核叠加，不作 Shepard 归一化。\n    屏蔽分两步：先将盘内粒子的发射置零，再仅积分盘外路径；\n    防止盘内亮气体的平滑核污染盘外图。有限核跨边界仍需收敛检查。\n    5 kpc 是距 z=0 盘面的高度，不是球半径或银纬；盘面沿模拟 xy 平面。\n    高于色标上限的银盘像素饱和；色标不能分离同一视线上的盘/晕发射。\n    射线离开该cube后 emissivity=0。\n    色条显示 lg(I_X/单位)，.npy 和所有积分保留线性物理量，色标截断不影响总量。\n    每帧输出原始强度、每像素光度、photometry.json，并更新 allsky_xray_photometry.csv。\n    统计全天及南北半球；结果为所选全部气体的本征 APEC 发射，未包含吸收、\n    仪器响应或背景扣除，不能直接称为“气泡净光度”。\n\n运行：\n    python allsky_xray_yt_v4_disk_masked_audit.py --snapshot-dir ./allsky\n    python allsky_xray_yt_v4_disk_masked_audit.py --snapshot-dir ./allsky --reuse-grid --reuse-allsky\n    python allsky_xray_yt_v4_disk_masked_audit.py --snapshot-dir ./allsky --intensity-limits 1e-12 5e-8\n\n    --disk-mask-half-height 默认 5 kpc；设为 0 才会保留全部盘面。\n    --color-reference-height-kpc 默认 5；只影响参考图/自动色标。\n    --color-scale offplane-percentile 可使用参考图第 99.5 百分位代替严格最大值。\n    yt 负责温度、APEC 和三维场；SciPy 做 LOS 三线性采样，healpy 负责全天球。\n    依赖：numpy scipy h5py matplotlib yt>=4 healpy；需 APEC v3 数据表。\n\noptions:\n  -h, --help            show this help message and exit\n  --snapshot-dir SNAPSHOT_DIR\n  --output-dir OUTPUT_DIR\n  --grid-dir GRID_DIR\n  --grid-radius-kpc GRID_RADIUS_KPC\n  --grid-n GRID_N\n  --nside NSIDE\n  --n-los N_LOS\n  --los-min-kpc LOS_MIN_KPC\n  --los-max-kpc LOS_MAX_KPC\n  --pixel-chunk PIXEL_CHUNK\n  --sun-offset-kpc SUN_OFFSET_KPC SUN_OFFSET_KPC SUN_OFFSET_KPC\n  --disk-mask-half-height DISK_MASK_HALF_HEIGHT\n                        实际排除 |z|<此值的发射；默认 5 kpc；设为 0 保留银盘，会影响光度\n  --color-reference-height-kpc COLOR_REFERENCE_HEIGHT_KPC\n                        盘外参考图的 |z| 下限，默认 5 kpc；不筛除主图发射\n  --color-scale {offplane-max,offplane-percentile,allsky-percentile}\n                        默认严格采用盘外参考图的最大强度为色标上限\n  --color-percentile-min COLOR_PERCENTILE_MIN\n  --color-percentile-max COLOR_PERCENTILE_MAX\n  --bh-id BH_ID         多颗 BH 时必须指定 MW 的 BH ID\n  --emin-kev EMIN_KEV\n  --emax-kev EMAX_KEV\n  --apec-data-dir APEC_DATA_DIR\n  --emissivity-reconstruction {luminosity,normalized}\n                        luminosity=yt\n                        按粒子光度作未归一化核叠加（默认）；normalized=采用旧版归一化插值供对照\n  --reuse-grid          物理参数及源文件校验一致时复用网格；旧的无签名缓存会重建\n  --reuse-allsky        复用已校验的线性强度/光度数组，只重绘 lg 色条和统计\n  --intensity-limits INTENSITY_LIMITS INTENSITY_LIMITS\n                        固定色标上下限，输入线性 erg/s/cm^2/sr，积分总量不受影响\n  --start START\n  --stop STOP\n  --stride STRIDE\n",
       "stderr": ""
+    },
+    {
+      "args": [
+        "tools/verify_export.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"copied_files\": 237,\n  \"python_files_parsed\": 161,\n  \"problems\": [],\n  \"passed\": true\n}\n",
+      "stderr": "",
+      "scope": "gas19_recovery_alpha_supplement",
+      "utc": "2026-11-17T09:13:31.721588+00:00"
     }
   ],
   "credential_scan_findings": [],
-  "platform": "WSL Linux x86_64; not Mac runtime verification"
+  "platform": "WSL Linux x86_64; not Mac runtime verification",
+  "gas19_recovery_alpha_supplement": {
+    "utc": "2026-11-17T09:13:31.721588+00:00",
+    "state": "frozen_for_upload",
+    "source_copies_verified": true,
+    "original_227_manifest_records_preserved": true,
+    "original_227_canonical_sha256": "24796d3e8512ebaadac69b328ff4c1a5bedc9859c4c437944a164065f7be8a5f",
+    "source_manifest_count": 237,
+    "python_files_parsed": 161,
+    "new_file_count": 10,
+    "new_python_count": 7,
+    "runtime_prepare_confirmation": "alpha_strategy_review confirmed actual alpha01 runtime prepare exit0 at 2026-11-17T09:11:02Z with initial_review, ready and clearance PASS; four alpha source files remained unchanged.",
+    "scope_limit": "Code provenance and syntax only; no Mac scientific run, no simulation data included, no scientific scripts imported by this export verification.",
+    "new_source_records": [
+      {
+        "path": "mw_isolated/cgm3_n3000_gas19_20261116/recovery_20261117_02/resume_once.py",
+        "sha256": "bc9cd8ba58869e17317d3c0a4b317ead390e458bf8f9df1d62d9f2e4d55e7c5c",
+        "size": 8820
+      },
+      {
+        "path": "mw_isolated/cgm3_n3000_gas19_20261116/recovery_20261117_02/checkpoint_audit.py",
+        "sha256": "9598e4567c8228cc70c1c47945306e49be6a26e8538e63c30a7e3b0cfe4c811b",
+        "size": 6467
+      },
+      {
+        "path": "mw_isolated/cgm3_n3000_gas19_20261116/scripts/gate_endpoint_resume02.py",
+        "sha256": "1e1e724be9ad2d11746a5da83130c9486aa774a26fb14fa190b7b1939d0adfa1",
+        "size": 15288
+      },
+      {
+        "path": "mw_isolated/cgm3_n3000_gas19_20261116/review_tools/gas19_alpha_production_review01.py",
+        "sha256": "27430e9b7c03f36b5c2e8584a4977974d68bc1bd0d578aa2fb8a1d507034f31c",
+        "size": 1317
+      },
+      {
+        "path": "mw_isolated/cgm3_n3000_gas19_20261116/review_tools/gas19_alpha_review01.py",
+        "sha256": "c5f0bcd978eb7743cde7c9d996bad9fe133c1af702257ead779ba37e65187545",
+        "size": 19239
+      },
+      {
+        "path": "mw_isolated/cgm3_n3000_gas19_20261116/review_tools/gas19_alpha_runtime_review01.py",
+        "sha256": "f4dc3fe1106280f78e2e235135e37cffdd0cbfa259562dc64f176afab63ea0f2",
+        "size": 10896
+      },
+      {
+        "path": "mw_isolated/cgm3_n3000_gas19_20261116/review_tools/gas19_rigid_writer_review01.py",
+        "sha256": "afcf04500ad182ec0b84fc221d73176d8dd4280f5ebfd69f3d18d3549929544d",
+        "size": 15390
+      },
+      {
+        "path": "mw_isolated/cgm3_n3000_gas19_20261116/review_tools/README_gas19_alpha_review01.md",
+        "sha256": "7a8b93cf05c1c9e0bb43a990fbef9c68ad72279428836993a29c12000e0a20fb",
+        "size": 3784
+      },
+      {
+        "path": "mw_isolated/cgm3_n3000_gas19_20261116/review_tools/source_interface_review01.json",
+        "sha256": "a5b6c5c9129e50e2898357b053dc622cab12161f210bd3f8a619217a24a8bb09",
+        "size": 1856
+      },
+      {
+        "path": "mw_isolated/cgm3_n3000_gas19_20261116/review_tools/source_preparation_review01.json",
+        "sha256": "cf879ef1ab7951edd17044c52322548b7284c2fcf078b11e61e0ea8193fb3bc1",
+        "size": 1842
+      }
+    ],
+    "modified_existing_paths": [
+      "README.md",
+      "provenance/source_manifest.json",
+      "provenance/validation.json"
+    ],
+    "all_changed_paths": [
+      "mw_isolated/cgm3_n3000_gas19_20261116/recovery_20261117_02/resume_once.py",
+      "mw_isolated/cgm3_n3000_gas19_20261116/recovery_20261117_02/checkpoint_audit.py",
+      "mw_isolated/cgm3_n3000_gas19_20261116/scripts/gate_endpoint_resume02.py",
+      "mw_isolated/cgm3_n3000_gas19_20261116/review_tools/gas19_alpha_production_review01.py",
+      "mw_isolated/cgm3_n3000_gas19_20261116/review_tools/gas19_alpha_review01.py",
+      "mw_isolated/cgm3_n3000_gas19_20261116/review_tools/gas19_alpha_runtime_review01.py",
+      "mw_isolated/cgm3_n3000_gas19_20261116/review_tools/gas19_rigid_writer_review01.py",
+      "mw_isolated/cgm3_n3000_gas19_20261116/review_tools/README_gas19_alpha_review01.md",
+      "mw_isolated/cgm3_n3000_gas19_20261116/review_tools/source_interface_review01.json",
+      "mw_isolated/cgm3_n3000_gas19_20261116/review_tools/source_preparation_review01.json",
+      "README.md",
+      "provenance/source_manifest.json",
+      "provenance/validation.json"
+    ]
+  }
 }

@@ -41,6 +41,8 @@ Mac 系统依赖及替代安装方式见 [Mac 安装说明](docs/MAC_SETUP.md)�
 
 ## 版本和迁移边界
 
+本轮新增 gas19/recovery_20261117_02、gate_endpoint_resume02 和 review_tools 内的恢复及 alpha 校准参考入口，实际保存于 mw_isolated/cgm3_n3000_gas19_20261116 下；这些脚本绑定原 Linux 运行路径与证据，不能直接作为 Mac 启动器。
+
 当前低气体 LMC/SMC 使用 gas19/code 内的生成器，显式设置气体总质量。顶层原生成器仍保留旧模型，不能自动替代。12D 优先使用 mw_isolated/validation_dashboard_sat_6d_gaswake_v3.py；erosita_xray 同名文件较老。
 
 原 v10_log 与 v10_1_native 色标不完全相同。新增 render_v10 调用用户原 v10_log，只适配加载与路径。不同 allsky 的盘掩膜和光度定义也不自动互换。

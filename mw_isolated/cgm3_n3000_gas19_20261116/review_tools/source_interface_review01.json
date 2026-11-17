@@ -1,0 +1,27 @@
+{
+  "utc": "2026-11-17T09:00:18.706852+00:00",
+  "reviewer": "independent audit_center_definition agent",
+  "scope": "source-only interface audit plus read-only JSON/stat checks; no imported scientific modules or HDF arrays, ODE, IC generation, runtime preparation or simulations",
+  "conclusion": "No actual interface blocker found",
+  "source_sha256": {
+    "gas19_alpha_review01.py": "c5f0bcd978eb7743cde7c9d996bad9fe133c1af702257ead779ba37e65187545",
+    "gas19_rigid_writer_review01.py": "afcf04500ad182ec0b84fc221d73176d8dd4280f5ebfd69f3d18d3549929544d",
+    "gas19_alpha_runtime_review01.py": "f4dc3fe1106280f78e2e235135e37cffdd0cbfa259562dc64f176afab63ea0f2",
+    "gas19_alpha_production_review01.py": "27430e9b7c03f36b5c2e8584a4977974d68bc1bd0d578aa2fb8a1d507034f31c"
+  },
+  "pre_gate_status": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_gas19_20261116/recovery_20261117_02/pre_gate_status.json",
+  "pre_gate_sha_matches_report": true,
+  "status_immutable_fields_match": true,
+  "confirmed": [
+    "campaign and base sidecar family, scope, epochs, units and measurement fields",
+    "actual complete endpoint gate report field contract",
+    "fresh profile API and archived-host fallback path availability",
+    "single rigid-step writer/proposal field contract",
+    "50 runtime source dependencies and exact base parameter path present",
+    "global then local lock ordering; production wrapper holds only global",
+    "formal runner creates validator products before pipe-based endpoint gate"
+  ],
+  "gate_result": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_gas19_20261116/calibration01/endpoint_review/gate_result.json",
+  "gate_result_sha256": "2b31bebd7de15716b44ce941817da54b1eea409e9e60a7c708bb3442af290d60",
+  "limit": "Source review does not replace actual evidence/IC checks already implemented in the single authorized run"
+}
