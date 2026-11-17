@@ -1,0 +1,17 @@
+name: erosita
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - numpy
+  - scipy
+  - h5py
+  - matplotlib
+  - yt
+  - astropy
+  - healpy
+  - pillow
+  - unyt
+  - tqdm
+  - ffmpeg

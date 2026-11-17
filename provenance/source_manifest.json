@@ -1,0 +1,1591 @@
+[
+  {
+    "path": "gizmo_compat.py",
+    "source_relative": "gizmo_compat.py",
+    "sha256": "d7d9d3ac4e1623fe05c8fe073c502885f356b8cfcb6dc2fbfdcfd1dd3f708d66",
+    "size": 17699,
+    "role": "science_script"
+  },
+  {
+    "path": "gizmo_schema.py",
+    "source_relative": "gizmo_schema.py",
+    "sha256": "ef733174c370badd96f54791c477130eb46c36349e9d5c4a7874afa5d5dcd4b9",
+    "size": 1004,
+    "role": "science_script"
+  },
+  {
+    "path": "gizmo_diagnostics_compat.py",
+    "source_relative": "gizmo_diagnostics_compat.py",
+    "sha256": "735e6a70f0a7ba23116d23ea8e322c8577fce750af0c113ae4c0fc7a5b2944ad",
+    "size": 3395,
+    "role": "science_script"
+  },
+  {
+    "path": "gizmo_units.py",
+    "source_relative": "gizmo_units.py",
+    "sha256": "215145d94e30b945eb61739975b73d6bd780c07731728e8e17ec05aeb1517fe2",
+    "size": 3807,
+    "role": "science_script"
+  },
+  {
+    "path": "gizmo_ic_compat.py",
+    "source_relative": "gizmo_ic_compat.py",
+    "sha256": "82f4c0e42ceb1ec08b045e6787276cc94a7dc1ed2a9f9b5d5ab43c14863c37e5",
+    "size": 5046,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/test_shooting_local.py",
+    "source_relative": "mw_isolated/test_shooting_local.py",
+    "sha256": "28830b1184495eed90ea87b91f7a84bfa2e89d89aceffe650b1d8b77baeeb011",
+    "size": 6537,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/shooting_probe.py",
+    "source_relative": "mw_isolated/shooting_probe.py",
+    "sha256": "017d4683e8fc5886e39b6aee0c80a57c828482e15bcd58f67ba14ea5db322008",
+    "size": 5355,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/history_response_v2.py",
+    "source_relative": "mw_isolated/history_response_v2.py",
+    "sha256": "937f6789e31a38f37be86df89e8033055c7d42cc94ec476b80338c7c8d57ad7e",
+    "size": 16256,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/shooting_local.py",
+    "source_relative": "mw_isolated/shooting_local.py",
+    "sha256": "4d76cbddba7f1691c544904e7b83722832d0b436fc27f7fcb6605d78edc5bf2e",
+    "size": 9623,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/history_response.py",
+    "source_relative": "mw_isolated/history_response.py",
+    "sha256": "c2d35af5555c4ce2ecf3ee079f5e9a46b44b5fcaefe73fc847661be27d1de6e1",
+    "size": 15008,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/prepare_gizmo_metal_restart_v1.py",
+    "source_relative": "mw_isolated/prepare_gizmo_metal_restart_v1.py",
+    "sha256": "4f29cab7feade673fae3b0a6cefa7339296760b01f8521e5009bf1439b3fccdd",
+    "size": 15914,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/erosita_bubble_xray.py",
+    "source_relative": "mw_isolated/erosita_bubble_xray.py",
+    "sha256": "2f0d5268b240fb19dc9c595d84893333aeac2b60190399d4ad73765fec0dfb7d",
+    "size": 6073,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/propose_history_shooting_v2.py",
+    "source_relative": "mw_isolated/propose_history_shooting_v2.py",
+    "sha256": "6a2b0f5c0809c273e2db0ad1ee50f5378f702bb9af64298a8015715a1454c74c",
+    "size": 19331,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/make_ic_mou_hot_cgm_v4.py",
+    "source_relative": "mw_isolated/make_ic_mou_hot_cgm_v4.py",
+    "sha256": "10a1ac28043c6c1223a86d8bdd96fe8b40a39fe0bbfc0c3b78d00c96faf0abdd",
+    "size": 87977,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/erosita_bubble_xray_yt_v10_1_native.py",
+    "source_relative": "mw_isolated/erosita_bubble_xray_yt_v10_1_native.py",
+    "sha256": "5cd4e355df68853efe99e9f7d1b2ed13db5001526ff5078c2968d8c1f7ddba04",
+    "size": 61909,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/make_ic_live_mw_cgm_isolated_v2.py",
+    "source_relative": "mw_isolated/make_ic_live_mw_cgm_isolated_v2.py",
+    "sha256": "f8e265e05ac7968e64d37e985e080a85cbfbf51131f5b1f7ce8ceb9da48a76f9",
+    "size": 60226,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/make_ic_live_mw_cgm_isolated_v3_highres.py",
+    "source_relative": "mw_isolated/make_ic_live_mw_cgm_isolated_v3_highres.py",
+    "sha256": "cc9361ebb1423fb3dc39d93a45ba5522cfe5d3fc0be735e576083ecb56e766a6",
+    "size": 89142,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/test_pipeline.py",
+    "source_relative": "mw_isolated/test_pipeline.py",
+    "sha256": "e21ca6ff7ffb31b932de98998fcadf35587fc299af9c7cc90faa4b369d6494b8",
+    "size": 18586,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/audit_shooting_history_v2.py",
+    "source_relative": "mw_isolated/audit_shooting_history_v2.py",
+    "sha256": "6a705b9035d6ef27a5c25fe5fcedbda7407f93fdd1f74c12ed3538fa833dc000",
+    "size": 13610,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/data_collector_unified.py",
+    "source_relative": "mw_isolated/data_collector_unified.py",
+    "sha256": "157df1de3af16218c0ab90e3a1c070c862065d48ab3c6bd14a1abc4e0c482b89",
+    "size": 13169,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/prepare_gizmo_stage2_handoff_v1.py",
+    "source_relative": "mw_isolated/prepare_gizmo_stage2_handoff_v1.py",
+    "sha256": "ee758f3419b8236e276d808cc096515db844ab2e1eb58fe4bbccdf78a093f965",
+    "size": 39067,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/make_smc_relax_ic.py",
+    "source_relative": "mw_isolated/make_smc_relax_ic.py",
+    "sha256": "2cad95e135f0db99269c55431b1bd9b6884757cd2e43b98b12e9ff533ee67e31",
+    "size": 213,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/chazhao.py",
+    "source_relative": "mw_isolated/chazhao.py",
+    "sha256": "7fa3e2f688a55c1594cb64550e4de1ea3b17f708899fe56c4246b50957f43040",
+    "size": 10346,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/123.py",
+    "source_relative": "mw_isolated/123.py",
+    "sha256": "6cfd45c2437ae1962b03580a4f1285aba7aa92eee3891328b20d234da48bf2e3",
+    "size": 6129,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/check_live_mw_cgm_isolated_relaxation_v3.py",
+    "source_relative": "mw_isolated/check_live_mw_cgm_isolated_relaxation_v3.py",
+    "sha256": "afa7d305cffce6f8735aeee2064c1a1a9e35bd9c6844775706a842a506fe40ea",
+    "size": 55920,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/test_validator_audit.py",
+    "source_relative": "mw_isolated/test_validator_audit.py",
+    "sha256": "dfde6429ffae98e5805a56547f98c6fa1daff29c13b539622a419bab694423f2",
+    "size": 14521,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/merge_relaxed_mw_lmc_smc_joint_y_v1.py",
+    "source_relative": "mw_isolated/merge_relaxed_mw_lmc_smc_joint_y_v1.py",
+    "sha256": "1085d2ae34d25ea9f0508a1173d23bf1621b59bfacddb6d34e5c4c77989d9c10",
+    "size": 58044,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/make_ic_mou_hot_cgm_noism_v5.py",
+    "source_relative": "mw_isolated/make_ic_mou_hot_cgm_noism_v5.py",
+    "sha256": "d4e331a75853d17a32c3de8151aab7417a578fd6f1fa9826482e583efeb1a4c8",
+    "size": 90792,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/make_lmc_relax_ic.py",
+    "source_relative": "mw_isolated/make_lmc_relax_ic.py",
+    "sha256": "39a8c720803915b1071bfdf0a46f2c688497113c51905d36db30c17f8557339e",
+    "size": 213,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/validation_dashboard_sat_6d_gaswake_v3.py",
+    "source_relative": "mw_isolated/validation_dashboard_sat_6d_gaswake_v3.py",
+    "sha256": "28a98850094c1bf97ba06af13ca55fa76b059b0b3e1728520de8795f0b7fc799",
+    "size": 58258,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/mw_validator_v6_1.py",
+    "source_relative": "mw_isolated/mw_validator_v6_1.py",
+    "sha256": "0c251dd68187c59623ba40302f886603a24ca62d7f43c1899da149f175340fba",
+    "size": 42982,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/test_history_response_v2.py",
+    "source_relative": "mw_isolated/test_history_response_v2.py",
+    "sha256": "9ff63c606c8e650e859b19b21ef2df498649cf942ecb6ffa35867592fd80ff54",
+    "size": 16016,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/make_ic_live_mw_disk_stage1_v1.py",
+    "source_relative": "mw_isolated/make_ic_live_mw_disk_stage1_v1.py",
+    "sha256": "216748f84fa8af0816cd1a8baf60c4f3939432bd3b3c0262866c74eccd9bfb2c",
+    "size": 45434,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/replay_relaxed_orbit.py",
+    "source_relative": "mw_isolated/replay_relaxed_orbit.py",
+    "sha256": "617e2e378f0c7947a8bf54c9c7cc3b92d165e4d22efa0d77caf7142bc719fbe3",
+    "size": 13814,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/test_shooting_proposal_io.py",
+    "source_relative": "mw_isolated/test_shooting_proposal_io.py",
+    "sha256": "cb3742508a0ebd480fb96c9737d30af6a1360385e264dc6bf22df62e04c5e169",
+    "size": 9995,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/test_shooting_joint_y.py",
+    "source_relative": "mw_isolated/test_shooting_joint_y.py",
+    "sha256": "e39a2e58eeffe7de0830ed430a6db8a1201182a74786763ad62a6bbd2551ea3f",
+    "size": 7663,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/shooting_joint_y.py",
+    "source_relative": "mw_isolated/shooting_joint_y.py",
+    "sha256": "738b88945221c647a86328a7f58e7d7453a7a457bbf37b1b2ee8a2046dbd029a",
+    "size": 10513,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/make_ic_live_mw_cgm_isolated_v3.py",
+    "source_relative": "mw_isolated/make_ic_live_mw_cgm_isolated_v3.py",
+    "sha256": "2cc1069226682dc2c30cd6ea8adcb56f05d5e920e4484e808f026ae047b8537d",
+    "size": 77708,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/mw_validator_v6.py",
+    "source_relative": "mw_isolated/mw_validator_v6.py",
+    "sha256": "a6554713b300ff47a5cbd54032dfd22c1cab2eb3758ffcff9eeeda632294bb6c",
+    "size": 35997,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/propose_history_shooting_v1.py",
+    "source_relative": "mw_isolated/propose_history_shooting_v1.py",
+    "sha256": "05533058713a348e680009a6efbd6f1e795e3b570fa827b613ed88a778de01fb",
+    "size": 13858,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/merge_relaxed_mw_lmc_smc_probe_v1.py",
+    "source_relative": "mw_isolated/merge_relaxed_mw_lmc_smc_probe_v1.py",
+    "sha256": "2c73286770ad1d2dee9b2c8b58a6ff2bc035f25f58aaeec3f7de4e0b7f7b4a12",
+    "size": 56095,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/satellite_relax_common.py",
+    "source_relative": "mw_isolated/satellite_relax_common.py",
+    "sha256": "a7ff947aa0d5e2fb23025759d942b378345624fad026d75928c54097b4d3f0d7",
+    "size": 19563,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/test_shooting_probe.py",
+    "source_relative": "mw_isolated/test_shooting_probe.py",
+    "sha256": "f45ff0474dc9138cbd6347a265f333f5e9ec1d4c9efab77933388f334e90d0b1",
+    "size": 5129,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/audit_mw_center_response_v1.py",
+    "source_relative": "mw_isolated/audit_mw_center_response_v1.py",
+    "sha256": "f43bb59a9aa31855035a65e3c087c13030a908e656f3c7ac0259cb41906d3e89",
+    "size": 18572,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/merge_relaxed_mw_lmc_smc.py",
+    "source_relative": "mw_isolated/merge_relaxed_mw_lmc_smc.py",
+    "sha256": "ff71bd1dc6ab4a37a5843a051fbb7c26231d96ee23eb6236eb20417c1f77ad6c",
+    "size": 51312,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/test_history_response.py",
+    "source_relative": "mw_isolated/test_history_response.py",
+    "sha256": "51bc45e716a57937e3323d1de7ae444dc7fe41328018505b465c4045a614aacb",
+    "size": 5251,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/tg19_backend.py",
+    "source_relative": "mw_isolated/tg19_backend.py",
+    "sha256": "6bad4ae89405b3095092fb65f472272c92a6f9900277a19ca03f71f64ab4d37a",
+    "size": 57394,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/check_live_mw_cgm_isolated_relaxation_v2.py",
+    "source_relative": "mw_isolated/check_live_mw_cgm_isolated_relaxation_v2.py",
+    "sha256": "824dafe71d229de6396988f0ee18167e4f03098aadf44b2cebfc16130202cf47",
+    "size": 37907,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/shooting_proposal_io.py",
+    "source_relative": "mw_isolated/shooting_proposal_io.py",
+    "sha256": "ffaf3a35e4ffdc6b9bfca4fbe5f170cd2ddf566cb41718ca19da43807ceea255",
+    "size": 13994,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/audit_shooting_history_v1.py",
+    "source_relative": "mw_isolated/audit_shooting_history_v1.py",
+    "sha256": "2e62068c30e31641973fd61dc68acf61a962b10cc2d6608e1f23771adab433bc",
+    "size": 11042,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/mw_validator.py",
+    "source_relative": "mw_isolated/mw_validator.py",
+    "sha256": "e24734c814bb593ca56ead6f2d9e6247d33ee9468e6c2dca357ce42f7d5cf893",
+    "size": 9026,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/check_live_mw_disk_stage1_relaxation_v1.py",
+    "source_relative": "mw_isolated/check_live_mw_disk_stage1_relaxation_v1.py",
+    "sha256": "6fa4b7846d8f9411c21fd49ffd04aed9c0e62553e9c643896959e71675185379",
+    "size": 30545,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/test_mw_center_response_v1.py",
+    "source_relative": "mw_isolated/test_mw_center_response_v1.py",
+    "sha256": "18487204f4c03d3bf509c38bcfbd6c22eb4ec4e4b7c7f7e6e74e800695cd5efa",
+    "size": 8022,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/check_snapshot_metallicity_v1.py",
+    "source_relative": "mw_isolated/check_snapshot_metallicity_v1.py",
+    "sha256": "f1863a3853172886d72c757123a9a0ba33d53184b72a8cf094154ebf7314f05c",
+    "size": 39935,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/merge_relaxed_mw_lmc_smc_history_v1.py",
+    "source_relative": "mw_isolated/merge_relaxed_mw_lmc_smc_history_v1.py",
+    "sha256": "6c141894a32220e43eed3333e929d501e2dd97350e883ed935b79f426850d203",
+    "size": 53320,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/add_lmc_smc_v1.py",
+    "source_relative": "erosita_xray/add_lmc_smc_v1.py",
+    "sha256": "d4dbfde13155061a9dbc6def387ff9a5252b2e172cfebfd99e62a6079e12ebee",
+    "size": 15776,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/allsky_xray_yt_v2_log_luminosity.py",
+    "source_relative": "erosita_xray/allsky_xray_yt_v2_log_luminosity.py",
+    "sha256": "ce5b2d253f7d1e474c37acbaca994ef85fda8c8abc48c4daf19bd335d460620f",
+    "size": 38075,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/add_lmc_smc_tg19_cold_disks_v7.py",
+    "source_relative": "erosita_xray/add_lmc_smc_tg19_cold_disks_v7.py",
+    "sha256": "1a6138dbe27915753ade1128d553e4b72c841c9e6bb5a8bb764ef885a3b1a7d8",
+    "size": 125550,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/debug.py",
+    "source_relative": "erosita_xray/debug.py",
+    "sha256": "22b46289e016fd0f7886e8da88ae17cde0e904ea4725e2bf882042b58539b79d",
+    "size": 18687,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/erosita_bubble_xray_yt_v10_log.py",
+    "source_relative": "erosita_xray/erosita_bubble_xray_yt_v10_log.py",
+    "sha256": "c6b13213260f0c34f74a8286fc6c67c01a6637cb1de0af5e4e3c7d54ff348f8e",
+    "size": 45579,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/erosita_bubble_xray.py",
+    "source_relative": "erosita_xray/erosita_bubble_xray.py",
+    "sha256": "2f0d5268b240fb19dc9c595d84893333aeac2b60190399d4ad73765fec0dfb7d",
+    "size": 6073,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/erosita_bubble_xray_yt_v10_1_native.py",
+    "source_relative": "erosita_xray/erosita_bubble_xray_yt_v10_1_native.py",
+    "sha256": "5cd4e355df68853efe99e9f7d1b2ed13db5001526ff5078c2968d8c1f7ddba04",
+    "size": 61909,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/test_pipeline.py",
+    "source_relative": "erosita_xray/test_pipeline.py",
+    "sha256": "fea32306eaf2c10208ad4df0e13c3ce2b3bfabc8271271eed0ab1823f0bf29c4",
+    "size": 12469,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/erosita_bubble_xray_yt_v9_morphology.py",
+    "source_relative": "erosita_xray/erosita_bubble_xray_yt_v9_morphology.py",
+    "sha256": "083f4fae6231f679a49393294abcde7b21f2a687fd8d7e450f9ff07652377591",
+    "size": 43925,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/diagnose_prejet_cgm_crosswind_v1.py",
+    "source_relative": "erosita_xray/diagnose_prejet_cgm_crosswind_v1.py",
+    "sha256": "3472ae0f2f5861ce9dec8dcb5c6cdf67a6d6c5888931455ccb5b56ffbde2566e",
+    "size": 36119,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/data_collector_unified.py",
+    "source_relative": "erosita_xray/data_collector_unified.py",
+    "sha256": "ebf0bc3470c2035bd45935f351e0dc9db3f31d2505cd10c94fbe2dd31f61730e",
+    "size": 13175,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/allsky_xray_yt_v3_disk_preserved.py",
+    "source_relative": "erosita_xray/allsky_xray_yt_v3_disk_preserved.py",
+    "sha256": "82d9adc25b9e3a73f5405a3b15885527cb469ab28395ea8f282e16d13f4e2e21",
+    "size": 49745,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/make_smc_relax_ic.py",
+    "source_relative": "erosita_xray/make_smc_relax_ic.py",
+    "sha256": "2cad95e135f0db99269c55431b1bd9b6884757cd2e43b98b12e9ff533ee67e31",
+    "size": 213,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/allsky_xray_yt.py",
+    "source_relative": "erosita_xray/allsky_xray_yt.py",
+    "sha256": "8c7ed2523343b54473a53a3a20e2891581f2291f025e83c7a08f4283a6331266",
+    "size": 28683,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/chazhao.py",
+    "source_relative": "erosita_xray/chazhao.py",
+    "sha256": "325d9052ab364b00c802f5471e11da3b156a2babd3c68b864717f3a7e9c9f014",
+    "size": 10346,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/123.py",
+    "source_relative": "erosita_xray/123.py",
+    "sha256": "6cfd45c2437ae1962b03580a4f1285aba7aa92eee3891328b20d234da48bf2e3",
+    "size": 6129,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/check_live_mw_cgm_isolated_relaxation_v3.py",
+    "source_relative": "erosita_xray/check_live_mw_cgm_isolated_relaxation_v3.py",
+    "sha256": "6349ba7fc576c57f8fb381b9b0347cdb141b145ea1228de430d6abec0cef7d94",
+    "size": 55880,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/checknumber.py",
+    "source_relative": "erosita_xray/checknumber.py",
+    "sha256": "6387554b7d70675ac8f18d021ffe7ce18a03cb4af627d80a7bab59da42200c3b",
+    "size": 1365,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/validation_dashboard_sat_favorable_y_2d_v1.py",
+    "source_relative": "erosita_xray/validation_dashboard_sat_favorable_y_2d_v1.py",
+    "sha256": "bf228120e32d4ca6d4e34dd3b788c14cfb74779aa0940a9c101aa13e088e7143",
+    "size": 47023,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/make_lmc_relax_ic.py",
+    "source_relative": "erosita_xray/make_lmc_relax_ic.py",
+    "sha256": "39a8c720803915b1071bfdf0a46f2c688497113c51905d36db30c17f8557339e",
+    "size": 213,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/validation_dashboard_sat_6d_gaswake_v3.py",
+    "source_relative": "erosita_xray/validation_dashboard_sat_6d_gaswake_v3.py",
+    "sha256": "c3d86db690f94c8ee6cc814fe341a5a6a9a6211e46ca621f1117c4a482b455d9",
+    "size": 37799,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/validation_dashboard_sat_6d.py",
+    "source_relative": "erosita_xray/validation_dashboard_sat_6d.py",
+    "sha256": "c814ab05db6bdebf4fa44dc3207c4e901dc5ff377c4af197d66db7bb3d1f2f3e",
+    "size": 24642,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/satellite_relax_common.py",
+    "source_relative": "erosita_xray/satellite_relax_common.py",
+    "sha256": "a7ff947aa0d5e2fb23025759d942b378345624fad026d75928c54097b4d3f0d7",
+    "size": 19563,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/mwcgm_velocity_diagnostic_v1.py",
+    "source_relative": "erosita_xray/mwcgm_velocity_diagnostic_v1.py",
+    "sha256": "038c75600f0eecd0c7ea21ef4eae98407500d3cbdafadbe3e8a87c59272f5d5b",
+    "size": 44379,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/merge_relaxed_mw_lmc_smc.py",
+    "source_relative": "erosita_xray/merge_relaxed_mw_lmc_smc.py",
+    "sha256": "d19dd0091ebd0bf598df71cd8ae31d4621eabdeda277f78671ee7db519201d70",
+    "size": 37496,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/allsky_xray_yt_v4_disk_masked_audit.py",
+    "source_relative": "erosita_xray/allsky_xray_yt_v4_disk_masked_audit.py",
+    "sha256": "e91563433ff465d3a76d1709316cb92cfc83b66709e2821f6a9df7b32311bf25",
+    "size": 64914,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/firelib.py",
+    "source_relative": "erosita_xray/firelib.py",
+    "sha256": "3ebd1278b008ad7b0f34cb1219397f32cea2fa3ac43e3af30b02913c103b55ad",
+    "size": 34233,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/tg19_backend.py",
+    "source_relative": "erosita_xray/tg19_backend.py",
+    "sha256": "6bad4ae89405b3095092fb65f472272c92a6f9900277a19ca03f71f64ab4d37a",
+    "size": 57394,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/pressure_at_surface.py",
+    "source_relative": "erosita_xray/pressure_at_surface.py",
+    "sha256": "6964964a8c641809ec75d87bd43b091241279b0f706cac8a524050794fb30ff3",
+    "size": 2443,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/azaxis.py",
+    "source_relative": "erosita_xray/azaxis.py",
+    "sha256": "a801866391d225b042fecbec5b0e2d0e1cf03159e5a09629dc951f1cdeff0459",
+    "size": 6270,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/add_lmc_smc_gaswake_orbit_v3.py",
+    "source_relative": "erosita_xray/add_lmc_smc_gaswake_orbit_v3.py",
+    "sha256": "db8af7a36519779d727f72f004e6ef394161102cf12b0afac38582610d657bac",
+    "size": 117937,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/erosita_bubble_xray_v6.py",
+    "source_relative": "erosita_xray/erosita_bubble_xray_v6.py",
+    "sha256": "c676ec6ac3d1c79904a4d4a67548b5e04b3b5aef039a8a6e3de15eb59a351dda",
+    "size": 4843,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/validation_dashboard_sat.py",
+    "source_relative": "erosita_xray/validation_dashboard_sat.py",
+    "sha256": "d2084705fe0aa92208b3cd7d577c6dbf5ad0612d76f243042f18488343a7399e",
+    "size": 8322,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/check_snapshot_metallicity_v1.py",
+    "source_relative": "erosita_xray/check_snapshot_metallicity_v1.py",
+    "sha256": "b846423a89f1f38f7b97d9c1add9caba8957a86ccb271bc9517c02cf1d2fd75d",
+    "size": 39895,
+    "role": "science_script"
+  },
+  {
+    "path": "erosita_xray/add_lmc_smc_gaswake_orbit_v4.py",
+    "source_relative": "erosita_xray/add_lmc_smc_gaswake_orbit_v4.py",
+    "sha256": "f1b0a5bdcdaa45fd640fb1590d4fac6657fec0e24283b641b5e6262136e199ee",
+    "size": 97686,
+    "role": "science_script"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/test_local_live_build_review.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/test_local_live_build_review.py",
+    "sha256": "ecf7518652d89a1c05fc7296f41e15dd06e7a4067c1932dbbf65b7f598683c63",
+    "size": 6208,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/test_local_live_workflow.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/test_local_live_workflow.py",
+    "sha256": "f845885aedbe30cfc0f258e4a42b0fe8834cd095eef938762601d6bc953d38e7",
+    "size": 23565,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/test_local_live_build_merger.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/test_local_live_build_merger.py",
+    "sha256": "3b396db7ade88dc88b5579d81dd1b2915cf7b5ba970d9fa10cc7c67757eb0a7a",
+    "size": 7270,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/local_live_binary.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/local_live_binary.py",
+    "sha256": "b4429040c94fd91b426c670b430ff0814a4dcb69da29a9f61fa9d2f9e7b98e06",
+    "size": 8158,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/test_local_live_math.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/test_local_live_math.py",
+    "sha256": "f69c58587bb39ab0906e5e0577b004d29184fdf08c2fb37d8600d61dd3b8e60a",
+    "size": 4858,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/test_local_live_binary.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/test_local_live_binary.py",
+    "sha256": "648c8f0ee3c0988c70cb479e1fa5a34b67b732d0527e6c1c0c01d2b46802c0a6",
+    "size": 5113,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/test_local_live_import.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/test_local_live_import.py",
+    "sha256": "8a7a159f6c77de87c7f27cba92c44b8906efaabfc39c4d0976c86ce88ca5bf87",
+    "size": 26090,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/local_live_evidence.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/local_live_evidence.py",
+    "sha256": "f97c66e19e3292e35a30cf8a5bb5cce4c0c0571ebebd9a487b89b9cad87dfad8",
+    "size": 15550,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/local_live_build_review.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/local_live_build_review.py",
+    "sha256": "bc2041eccaef5e6ce6e9bbfafd1df82ad67e8102499a8cd9d4c2f69b4bee9c4c",
+    "size": 6457,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/local_live_import.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/local_live_import.py",
+    "sha256": "4749de54234202e1dff45bedd5722382ea6075e28ab6b3ff24e51becaba39562",
+    "size": 16468,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/local_live_params.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/local_live_params.py",
+    "sha256": "daf3c4b1e241638630d5ddf17a45153de8cd5efb234a04b43a22fa33fa04c8ad",
+    "size": 7102,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/test_local_live_paths.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/test_local_live_paths.py",
+    "sha256": "7c99875496c05caf0a562e054c2a53a0bf0c7a993799d039075d85dac6129c8f",
+    "size": 3772,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/local_live_math.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/local_live_math.py",
+    "sha256": "498cd8f17b9f886428cdaaa5913bb4296b629c8690929768059ca7de5a56aba0",
+    "size": 7233,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/test_local_live_params.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/test_local_live_params.py",
+    "sha256": "8380d00d46436ca8c1a916a470b1308516b455af0e0d4fb5ce8fc84a728302d4",
+    "size": 7117,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/live_shooting_round_v1.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/live_shooting_round_v1.py",
+    "sha256": "a7032b9dc897686a9a20bfaa9ac2b7e305876407b4b3853692e4a997629f8dc6",
+    "size": 28514,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/pipeline/shooting_probe.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/pipeline/shooting_probe.py",
+    "sha256": "017d4683e8fc5886e39b6aee0c80a57c828482e15bcd58f67ba14ea5db322008",
+    "size": 5355,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/pipeline/shooting_local.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/pipeline/shooting_local.py",
+    "sha256": "4d76cbddba7f1691c544904e7b83722832d0b436fc27f7fcb6605d78edc5bf2e",
+    "size": 9623,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/pipeline/audit_shooting_history_v2.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/pipeline/audit_shooting_history_v2.py",
+    "sha256": "6a705b9035d6ef27a5c25fe5fcedbda7407f93fdd1f74c12ed3538fa833dc000",
+    "size": 13610,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/pipeline/merge_relaxed_mw_lmc_smc_local_live_v1.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/pipeline/merge_relaxed_mw_lmc_smc_local_live_v1.py",
+    "sha256": "debc409ab2ec5f765688eb843063660a3952c5bd2a33f062c48d80e34b1514ae",
+    "size": 62978,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/pipeline/validation_dashboard_sat_6d_gaswake_v3.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/pipeline/validation_dashboard_sat_6d_gaswake_v3.py",
+    "sha256": "0df8f8e74747a46e8bc3ad3931c3fc1bcc0871d0fb88ab3dc1c251daeddf3647",
+    "size": 58161,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/pipeline/satellite_relax_common.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/pipeline/satellite_relax_common.py",
+    "sha256": "a7ff947aa0d5e2fb23025759d942b378345624fad026d75928c54097b4d3f0d7",
+    "size": 19563,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_local_live_v1/pipeline/tg19_backend.py",
+    "source_relative": "mw_isolated/shooting_local_live_v1/pipeline/tg19_backend.py",
+    "sha256": "6bad4ae89405b3095092fb65f472272c92a6f9900277a19ca03f71f64ab4d37a",
+    "size": 57394,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_gas19_20261116/code/prepare_and_relax_once.py",
+    "source_relative": "mw_isolated/cgm3_n3000_gas19_20261116/code/prepare_and_relax_once.py",
+    "sha256": "ce46a2166fa593540f09944b1059bd813acbce17157b9f53c8e438fe68211fb6",
+    "size": 7580,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_gas19_20261116/code/continue_relax_once01.py",
+    "source_relative": "mw_isolated/cgm3_n3000_gas19_20261116/code/continue_relax_once01.py",
+    "sha256": "6819a7e89352677a893cac10f204065bb28b5ba82b23f4b98482eeebc5ebdfec",
+    "size": 4111,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_gas19_20261116/code/make_smc_relax_ic.py",
+    "source_relative": "mw_isolated/cgm3_n3000_gas19_20261116/code/make_smc_relax_ic.py",
+    "sha256": "750dd1e263d263295c7838bec953533bc60e359334e3eb4324b1873c9f46f2af",
+    "size": 113,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_gas19_20261116/code/proceed_infall_once.py",
+    "source_relative": "mw_isolated/cgm3_n3000_gas19_20261116/code/proceed_infall_once.py",
+    "sha256": "808c218f2adf44c3e037ea0304e7e5e61a9d5c76daeff2c88eb48b44c347d196",
+    "size": 9159,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_gas19_20261116/code/make_lmc_relax_ic.py",
+    "source_relative": "mw_isolated/cgm3_n3000_gas19_20261116/code/make_lmc_relax_ic.py",
+    "sha256": "75771ad26f92703266e544a6a5a237c52c94629ca3db4bed3976945d74975e7a",
+    "size": 113,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_gas19_20261116/code/no_smoke_followthrough01.py",
+    "source_relative": "mw_isolated/cgm3_n3000_gas19_20261116/code/no_smoke_followthrough01.py",
+    "sha256": "af24ff0cf429defc42711bbb7b7288f2ac6e289fcbedb19523eed9e96fa89d79",
+    "size": 2646,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_gas19_20261116/code/satellite_relax_common.py",
+    "source_relative": "mw_isolated/cgm3_n3000_gas19_20261116/code/satellite_relax_common.py",
+    "sha256": "63c047eb45c3c7bcebbaa69e4fedf5f92fd9a1a475be6e1801443d9adc3a7a94",
+    "size": 19806,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_gas19_20261116/code/tg19_backend.py",
+    "source_relative": "mw_isolated/cgm3_n3000_gas19_20261116/code/tg19_backend.py",
+    "sha256": "6bad4ae89405b3095092fb65f472272c92a6f9900277a19ca03f71f64ab4d37a",
+    "size": 57394,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_gas19_20261116/scripts/gate_endpoint.py",
+    "source_relative": "mw_isolated/cgm3_n3000_gas19_20261116/scripts/gate_endpoint.py",
+    "sha256": "12c2fb75fb80dc5acbae408b223cdb84c921da1e9acf15cda1e3f984a3d1ca4d",
+    "size": 15234,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_gas19_20261116/scripts/drive_stage.py",
+    "source_relative": "mw_isolated/cgm3_n3000_gas19_20261116/scripts/drive_stage.py",
+    "sha256": "6b31188308f573bd4efe9ba1725db76469a3eb3ea4a5aea91ffcdb1ce91df534",
+    "size": 1562,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_gas19_20261116/scripts/run_trial.py",
+    "source_relative": "mw_isolated/cgm3_n3000_gas19_20261116/scripts/run_trial.py",
+    "sha256": "21b4cebae7f1b4a3619065b96b4c3b824a2cf59f64854d50706e403b917ef5ca",
+    "size": 12735,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_gas19_20261116/scripts/gate_endpoint_resume01.py",
+    "source_relative": "mw_isolated/cgm3_n3000_gas19_20261116/scripts/gate_endpoint_resume01.py",
+    "sha256": "ff9e173e2d2cf46c424d850945d7f68c5634ed70645fe64704ea3135c1fa624b",
+    "size": 15288,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_gas19_20261116/scripts/stage_safety.py",
+    "source_relative": "mw_isolated/cgm3_n3000_gas19_20261116/scripts/stage_safety.py",
+    "sha256": "c0e218ba49a73046f447561c360ac1b77331512b94a2c37ca7d5d30b8659537d",
+    "size": 2496,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_gas19_20261116/scripts/build_calibration_ic.py",
+    "source_relative": "mw_isolated/cgm3_n3000_gas19_20261116/scripts/build_calibration_ic.py",
+    "sha256": "074045582a32b72c0dad39c2cd2a0f8658079c4e854523f88679e20d3dc8c01a",
+    "size": 18921,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_gas19_20261116/scripts/production_and_gate.py",
+    "source_relative": "mw_isolated/cgm3_n3000_gas19_20261116/scripts/production_and_gate.py",
+    "sha256": "35730afa7c97d3e208e73773faab9b9cc772fbbd8d815acf701bdd7823969919",
+    "size": 4001,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/verify_calibration_ic.py",
+    "source_relative": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/verify_calibration_ic.py",
+    "sha256": "dcf2ebb2e67c6f28540315b9e111dbcbc5b2fd61427d341a5af29dfe61b09a56",
+    "size": 11617,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/gate_endpoint.py",
+    "source_relative": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/gate_endpoint.py",
+    "sha256": "02c3df85fb05c009d3b863267da773e339dd6b24f917589957397c0db3ec6ef7",
+    "size": 15299,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/drive_stage.py",
+    "source_relative": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/drive_stage.py",
+    "sha256": "6b31188308f573bd4efe9ba1725db76469a3eb3ea4a5aea91ffcdb1ce91df534",
+    "size": 1562,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/review_launch.py",
+    "source_relative": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/review_launch.py",
+    "sha256": "b41b3aae2ea4ac99879bda6b2b0e7193151110d2c51dd830f9cd49c4c871832f",
+    "size": 2968,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/run_trial.py",
+    "source_relative": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/run_trial.py",
+    "sha256": "55c8408492d2a4ddfeb0f53ddcc9282241b87e7a9658bd196c21c1b0bfc47eb4",
+    "size": 12733,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/apply_orbit_step.py",
+    "source_relative": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/apply_orbit_step.py",
+    "sha256": "cddcd1638202538b6e5741b5174a0e4093f5821bb5702b21691d3d78d220b84d",
+    "size": 2036,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/stage_safety.py",
+    "source_relative": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/stage_safety.py",
+    "sha256": "51b002d8396fa8a4b10ebfd28e4047239bf1b6cd0507ec7f35bc2e2830be5055",
+    "size": 8658,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/prepare_calibration01.py",
+    "source_relative": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/prepare_calibration01.py",
+    "sha256": "16a3767d1b1ebd25bed1f729fd8bce7c9713d0bdbec52fe61e36f2f424487dcf",
+    "size": 2930,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/check_smoke.py",
+    "source_relative": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/check_smoke.py",
+    "sha256": "b1f36b6fbc67f7ffb206d7351a91dbe689300a5c194be24619ca7a4cfa4d2d27",
+    "size": 4882,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/build_calibration_ic.py",
+    "source_relative": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/build_calibration_ic.py",
+    "sha256": "14be76dfbb6b4db86c6f01918b7bb4fc9ff4eebd12345fc9a5237fff4fb886ac",
+    "size": 18526,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/local_rigid_writer.py",
+    "source_relative": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/local_rigid_writer.py",
+    "sha256": "8fe92853c8183398897c03cc001962d30be7b5e6c00714e7853821a6615a7d34",
+    "size": 13729,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/local_refine.py",
+    "source_relative": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/local_refine.py",
+    "sha256": "c364b960b280f2ff4d6fbd32cfc7edd95d29ab237548983fefdeddad65911688",
+    "size": 14763,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/make_trial_runtime.py",
+    "source_relative": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/make_trial_runtime.py",
+    "sha256": "dbe4f5d58af1b68e77813f2d559ac741ca009c90d7d1da65c60cba4e06f2ea4c",
+    "size": 10419,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/propose_alpha.py",
+    "source_relative": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/propose_alpha.py",
+    "sha256": "a21056aacea0d800378249bef5912d842fc88d14e37b0ddfbeed6f77d4fa9bfa",
+    "size": 13914,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/live_endpoint_evidence.py",
+    "source_relative": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/live_endpoint_evidence.py",
+    "sha256": "07e47c017959845c8e9142d32fd0dea6a02df75be5873d4f502d958c9a76726f",
+    "size": 3527,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/production_and_gate.py",
+    "source_relative": "mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/scripts/production_and_gate.py",
+    "sha256": "53e2b9a6cc2aed9d79dfd73b727063902fcceb3269d16b4c7d90fb1ecb5436e2",
+    "size": 3984,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "mw_isolated/shooting_cpp_20261031_082656/check_orbit_gate.py",
+    "source_relative": "mw_isolated/shooting_cpp_20261031_082656/check_orbit_gate.py",
+    "sha256": "755b300704b453d91690d4fef11d4c9e1a617c4e82781a05378b17271485427a",
+    "size": 19492,
+    "role": "campaign_reference_or_library"
+  },
+  {
+    "path": "erosita_xray/apec_emissivity_v3.h5",
+    "source_relative": "erosita_xray/apec_emissivity_v3.h5",
+    "sha256": "3fe97a20e059735ba00ac2c64c9faaf1962920522fb4e7b46616cc3b6146e492",
+    "size": 813000,
+    "role": "small_emissivity_resource"
+  },
+  {
+    "path": "mw_isolated/README_shooting_joint_y_v1.txt",
+    "source_relative": "mw_isolated/README_shooting_joint_y_v1.txt",
+    "sha256": "1a9fd47384520d35bca22a34b612dc93856b4a1c40ab1ab91aa7bfa232a3a143",
+    "size": 4894,
+    "role": "original_documentation"
+  },
+  {
+    "path": "mw_isolated/README_shooting_proposal_apply_v1.txt",
+    "source_relative": "mw_isolated/README_shooting_proposal_apply_v1.txt",
+    "sha256": "4f85e2ab46f0638b67efb2b0e7ed87585d163326b5cf7cf82422e0abd4351869",
+    "size": 3036,
+    "role": "original_documentation"
+  },
+  {
+    "path": "mw_isolated/README.txt",
+    "source_relative": "mw_isolated/README.txt",
+    "sha256": "23941d11cfcc72ffba2c785bdd279310bb955989809b0916cde54189fa40f7e9",
+    "size": 3333,
+    "role": "original_documentation"
+  },
+  {
+    "path": "mw_isolated/README_zh.md",
+    "source_relative": "mw_isolated/README_zh.md",
+    "sha256": "6404a480999766fae9b527644c7c75333a5a1d5ffee3999f3b0e7b1168a90f97",
+    "size": 26071,
+    "role": "original_documentation"
+  },
+  {
+    "path": "mw_isolated/README_shooting_anchor_probe_v2.txt",
+    "source_relative": "mw_isolated/README_shooting_anchor_probe_v2.txt",
+    "sha256": "88f550b18d30e7d7a762b314f7dd91f068fef589e645b0ae2410ffb53b8f23b2",
+    "size": 5020,
+    "role": "original_documentation"
+  },
+  {
+    "path": "mw_isolated/README_mw_center_response_audit_v1.txt",
+    "source_relative": "mw_isolated/README_mw_center_response_audit_v1.txt",
+    "sha256": "454613a575f24938f98741f315abb486b8d8f6e1b088e7d5b470546a1cd73808",
+    "size": 3718,
+    "role": "original_documentation"
+  },
+  {
+    "path": "reference_configs/mw_isolated/shooting_t10_runtime.param",
+    "source_relative": "mw_isolated/shooting_t10_runtime.param",
+    "sha256": "d97073ebc8484e4d40bf0b5a7b1cf5bb7b30004d559baeba56241b5acf4198ef",
+    "size": 5178,
+    "role": "historical_parameter_reference"
+  },
+  {
+    "path": "reference_configs/mw_isolated/mw_isolated.param",
+    "source_relative": "mw_isolated/mw_isolated.param",
+    "sha256": "04605ffc399ce2895c70d57fc52e797855eb2a439268ee5f2b2eb927457b2deb",
+    "size": 5369,
+    "role": "historical_parameter_reference"
+  },
+  {
+    "path": "reference_configs/mw_isolated/mw_isolated_ab.param",
+    "source_relative": "mw_isolated/mw_isolated_ab.param",
+    "sha256": "8ffcc50bfe93420860a9d911c27f3860493dbc0bd4cc926e007c685a94ca1b5c",
+    "size": 1429,
+    "role": "historical_parameter_reference"
+  },
+  {
+    "path": "reference_configs/mw_isolated/TREECOOL",
+    "source_relative": "mw_isolated/TREECOOL",
+    "sha256": "90e1ba179b4c6f3459ad9c6cc350f5c014158c19754d2d78f1b5d37daed7ab3e",
+    "size": 15911,
+    "role": "cooling_input"
+  },
+  {
+    "path": "reference_configs/erosita_xray/erosita.param",
+    "source_relative": "erosita_xray/erosita.param",
+    "sha256": "df200fec6feeac7182abdd5332fd38a647e081aa4a5b36f7827b00c1c7ebd7f0",
+    "size": 5536,
+    "role": "historical_parameter_reference"
+  },
+  {
+    "path": "reference_configs/erosita_xray/lmc.param",
+    "source_relative": "erosita_xray/lmc.param",
+    "sha256": "58ddc2012cb4412831f7d5253200bed49ed023011af711ff6a99e509ddaa0b88",
+    "size": 5376,
+    "role": "historical_parameter_reference"
+  },
+  {
+    "path": "reference_configs/erosita_xray/smc.param",
+    "source_relative": "erosita_xray/smc.param",
+    "sha256": "c04d2cd0791333837e041f579aa6ab37616df2e83b8688b4008590a348f579fd",
+    "size": 5376,
+    "role": "historical_parameter_reference"
+  },
+  {
+    "path": "reference_configs/erosita_xray/merger.param",
+    "source_relative": "erosita_xray/merger.param",
+    "sha256": "b5ad7867d83dc81d46c5cd524e480650fc937f058f4560d22b6d571c181fd03a",
+    "size": 5331,
+    "role": "historical_parameter_reference"
+  },
+  {
+    "path": "reference_configs/erosita_xray/TREECOOL",
+    "source_relative": "erosita_xray/TREECOOL",
+    "sha256": "90e1ba179b4c6f3459ad9c6cc350f5c014158c19754d2d78f1b5d37daed7ab3e",
+    "size": 15911,
+    "role": "cooling_input"
+  },
+  {
+    "path": "reference_configs/current_gas19/relax_base.param",
+    "source_relative": "mw_isolated/cgm3_n3000_gas19_20261116/code/relax_base.param",
+    "sha256": "23a2be34094eb68c07769a9707b57a0b70ee8f6461e1e45dd40ab4cb76a4bbf6",
+    "size": 5133,
+    "role": "current_parameter_template"
+  },
+  {
+    "path": "reference_configs/current_gas19/infall_base.param",
+    "source_relative": "mw_isolated/cgm3_n3000_gas19_20261116/provenance/infall_base.param",
+    "sha256": "0d891a2a0f8a1077fb0e68481989ab47e3b6bedd655cdfda06b644f3427a2d93",
+    "size": 5192,
+    "role": "current_parameter_template"
+  },
+  {
+    "path": "reference_configs/infall/Config.sh",
+    "source_relative": "/home/xingdi/gizmo-public-gizmo-cpp/Config.sh",
+    "sha256": "62490ddc581aa9648afd7338ecacdc4d0385b2dd76544bba5e097918d6d16180",
+    "size": 101992,
+    "role": "infall_build_config"
+  },
+  {
+    "path": "jet_reference/fixed_supply_cpp_20261115/build_once_review01.py",
+    "source_relative": "/mnt/i/erosita数据/归档记录/2026-11-16/accepted_orbit_and_jet/compat_validation/20261115_fixed_supply_cpp_port_review01/build_once_review01.py",
+    "sha256": "150b1de33b090b499346464e2c7c8975929c7dbaa77751e2343f9c97ed54d15b",
+    "size": 6986,
+    "role": "archived_jet_source_reference"
+  },
+  {
+    "path": "jet_reference/fixed_supply_cpp_20261115/check_stage3_ic_review01.py",
+    "source_relative": "/mnt/i/erosita数据/归档记录/2026-11-16/accepted_orbit_and_jet/compat_validation/20261115_fixed_supply_cpp_port_review01/check_stage3_ic_review01.py",
+    "sha256": "576d5e86efcd6d9361d27a3ad535e7e51ea808b6a2611061968e1b41132dad9d",
+    "size": 23106,
+    "role": "archived_jet_source_reference"
+  },
+  {
+    "path": "jet_reference/fixed_supply_cpp_20261115/check_stage3_smoke_review01.py",
+    "source_relative": "/mnt/i/erosita数据/归档记录/2026-11-16/accepted_orbit_and_jet/compat_validation/20261115_fixed_supply_cpp_port_review01/check_stage3_smoke_review01.py",
+    "sha256": "7e3a74d4f02cfbe46728ac8cffa340ae5c9d8194e84d0a0c679836fdf990d985",
+    "size": 31665,
+    "role": "archived_jet_source_reference"
+  },
+  {
+    "path": "jet_reference/fixed_supply_cpp_20261115/prepare_source_port.py",
+    "source_relative": "/mnt/i/erosita数据/归档记录/2026-11-16/accepted_orbit_and_jet/compat_validation/20261115_fixed_supply_cpp_port_review01/prepare_source_port.py",
+    "sha256": "c3c3001b47f3e93d2a032772cc44bd288ca8907ccdccc114b7559339e29b83d7",
+    "size": 10512,
+    "role": "archived_jet_source_reference"
+  },
+  {
+    "path": "jet_reference/fixed_supply_cpp_20261115/stage3_once_runner_review01.py",
+    "source_relative": "/mnt/i/erosita数据/归档记录/2026-11-16/accepted_orbit_and_jet/compat_validation/20261115_fixed_supply_cpp_port_review01/stage3_once_runner_review01.py",
+    "sha256": "27b98ba8966ede3de522a883f2577e22de86f93ae84bd8902308467e55cabf40",
+    "size": 16139,
+    "role": "archived_jet_source_reference"
+  },
+  {
+    "path": "jet_reference/fixed_supply_cpp_20261115/stage3_prepare_review01.py",
+    "source_relative": "/mnt/i/erosita数据/归档记录/2026-11-16/accepted_orbit_and_jet/compat_validation/20261115_fixed_supply_cpp_port_review01/stage3_prepare_review01.py",
+    "sha256": "34af364421d96802fa7e8088b4dfc235b0d7722be69d8e8100d6afa71beddc7c",
+    "size": 17914,
+    "role": "archived_jet_source_reference"
+  },
+  {
+    "path": "jet_reference/fixed_supply_cpp_20261115/test_source_port_static.py",
+    "source_relative": "/mnt/i/erosita数据/归档记录/2026-11-16/accepted_orbit_and_jet/compat_validation/20261115_fixed_supply_cpp_port_review01/test_source_port_static.py",
+    "sha256": "0a1123a9f3fd0450ec2642434cd3b1613d24ba78a21058e052530ed0306b6798",
+    "size": 12141,
+    "role": "archived_jet_source_reference"
+  },
+  {
+    "path": "jet_reference/fixed_supply_cpp_20261115/fixed_supply_cpp.patch",
+    "source_relative": "/mnt/i/erosita数据/归档记录/2026-11-16/accepted_orbit_and_jet/compat_validation/20261115_fixed_supply_cpp_port_review01/fixed_supply_cpp.patch",
+    "sha256": "779ec121fbdf2aca833a3efc1037f75a8c76a749b3144566778646d257cc3908",
+    "size": 8649,
+    "role": "archived_jet_source_reference"
+  },
+  {
+    "path": "jet_reference/fixed_supply_cpp_20261115/PORT_REVIEW.md",
+    "source_relative": "/mnt/i/erosita数据/归档记录/2026-11-16/accepted_orbit_and_jet/compat_validation/20261115_fixed_supply_cpp_port_review01/PORT_REVIEW.md",
+    "sha256": "3fb8f397790790d7360288196845d9d074015390c9c0f3558230dee1e77d2b2d",
+    "size": 10118,
+    "role": "archived_jet_source_reference"
+  },
+  {
+    "path": "jet_reference/fixed_supply_cpp_20261115/stage3_contract.json",
+    "source_relative": "/mnt/i/erosita数据/归档记录/2026-11-16/accepted_orbit_and_jet/compat_validation/20261115_fixed_supply_cpp_port_review01/stage3_contract.json",
+    "sha256": "020450d2dc9a4241a223df7c55a75e78cac7af0da7ea6ac73f68e95d320e55f2",
+    "size": 5608,
+    "role": "archived_jet_source_reference"
+  },
+  {
+    "path": "jet_reference/fixed_supply_cpp_20261115/stage3_runtime_inputs_contract.json",
+    "source_relative": "/mnt/i/erosita数据/归档记录/2026-11-16/accepted_orbit_and_jet/compat_validation/20261115_fixed_supply_cpp_port_review01/stage3_runtime_inputs_contract.json",
+    "sha256": "0c81dcde6b035d7ca9f7f06d153f3280ccc080af02314e1a7ac4fd4e51bdc24a",
+    "size": 16081,
+    "role": "archived_jet_source_reference"
+  },
+  {
+    "path": "jet_reference/fixed_supply_cpp_20261115/source/Config.sh",
+    "source_relative": "/mnt/i/erosita数据/归档记录/2026-11-16/accepted_orbit_and_jet/compat_validation/20261115_fixed_supply_cpp_port_review01/source/Config.sh",
+    "sha256": "1a986208de4aa0be2c57bb2e0b8fc275591ef386a62ef25160ffc3bfdb3aeec8",
+    "size": 102125,
+    "role": "archived_jet_source_reference"
+  },
+  {
+    "path": "jet_reference/fixed_supply_cpp_20261115/source/Makefile",
+    "source_relative": "/mnt/i/erosita数据/归档记录/2026-11-16/accepted_orbit_and_jet/compat_validation/20261115_fixed_supply_cpp_port_review01/source/Makefile",
+    "sha256": "eebd4b7a19b25556ab57dff19043a26500408b0503a8c2351c4bbb2246d59761",
+    "size": 18415,
+    "role": "archived_jet_source_reference"
+  },
+  {
+    "path": "jet_reference/fixed_supply_cpp_20261115/source/Makefile.systype",
+    "source_relative": "/mnt/i/erosita数据/归档记录/2026-11-16/accepted_orbit_and_jet/compat_validation/20261115_fixed_supply_cpp_port_review01/source/Makefile.systype",
+    "sha256": "b37b69445413ddc3e0da503c2828ea4a5b7c34716afe4716ca845816d2e26949",
+    "size": 321,
+    "role": "archived_jet_source_reference"
+  },
+  {
+    "path": "reference_configs/jet_fixed_supply_dt001/stage3.param",
+    "source_relative": "/mnt/i/erosita数据/归档记录/2026-11-16/accepted_orbit_and_jet/erosita_xray/cgm3_n3000_cpp_fixed_supply_20261115/production_dt001_resume01/stage3.param",
+    "sha256": "910a240e75489361e9e9d17f160ae79e95db5d1b6527e15ef5d69ac39c20229d",
+    "size": 5230,
+    "role": "actual_jet_parameter_reference"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_0",
+    "source_relative": "mw_isolated/spcool_tables/spcool_0",
+    "sha256": "46eb3b6ea290041241b32c7144fa99286dedde98c4758e8d3e835575ebfb89a5",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_1",
+    "source_relative": "mw_isolated/spcool_tables/spcool_1",
+    "sha256": "b0ed1e1064d4c7839ad862f68cbd0a1c469137ef46d9cd2a489c97740006153b",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_10",
+    "source_relative": "mw_isolated/spcool_tables/spcool_10",
+    "sha256": "c1c72a2339f50b774bbb676927007b7b5287cfa2c07aad26a0a29e84e2807068",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_11",
+    "source_relative": "mw_isolated/spcool_tables/spcool_11",
+    "sha256": "580881593ff8b1ecc2cbe4c67ab53838f0dac13388a6c18e1da04613e62871b9",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_12",
+    "source_relative": "mw_isolated/spcool_tables/spcool_12",
+    "sha256": "05c87114dcd58496d3de82b106f2e8c3bc23417bb6424a6d676d34cce98c0bb4",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_13",
+    "source_relative": "mw_isolated/spcool_tables/spcool_13",
+    "sha256": "2dac80d9ec5e0b1ce22dcc4a8b17379cd07663758776d8e4cb1ed01d5a0a9714",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_14",
+    "source_relative": "mw_isolated/spcool_tables/spcool_14",
+    "sha256": "49fa4e1126416e0dbf2368d80e78fa6f2d4e90a8360b7810d8366d7a2d0c0a3f",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_15",
+    "source_relative": "mw_isolated/spcool_tables/spcool_15",
+    "sha256": "8b5891a90c511d497da922f71fdb5625eb834aa287c908b33215c8a2b6ce723d",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_16",
+    "source_relative": "mw_isolated/spcool_tables/spcool_16",
+    "sha256": "98adfbc9ae633dec7c40297b6012038d5404d31c897a6faaf3a8c620416a07e2",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_17",
+    "source_relative": "mw_isolated/spcool_tables/spcool_17",
+    "sha256": "ae0dbbd0da5e8212bcd53b82b8573244984c1f56c3be246d7b2c2039efbe50ab",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_18",
+    "source_relative": "mw_isolated/spcool_tables/spcool_18",
+    "sha256": "5b78e05996bfaf7d365e2d03743f3a59e2a8b9d6a85a9fbfcbf8cac5db41b55e",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_19",
+    "source_relative": "mw_isolated/spcool_tables/spcool_19",
+    "sha256": "379e9a9b5dfab515cb3799e621eb9847010f8a04b2803c89c9ae231a793f957d",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_2",
+    "source_relative": "mw_isolated/spcool_tables/spcool_2",
+    "sha256": "70d00f7cc00e9f1a6611a2dd45c4f439befafa05916c0b333e3737392c22868e",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_20",
+    "source_relative": "mw_isolated/spcool_tables/spcool_20",
+    "sha256": "16cea9cc5788696b7d55303d6ef49e8c92eefb5408a1081287479b7fb38e2f08",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_21",
+    "source_relative": "mw_isolated/spcool_tables/spcool_21",
+    "sha256": "f5b9d74eba582c8a386adce5ab4821a7c993d5d42ad886c5c34ad99f06b55b06",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_22",
+    "source_relative": "mw_isolated/spcool_tables/spcool_22",
+    "sha256": "56c96012dfd96c519e1d1465cd92906cf410ccc48f5d76282020bc51b38f5575",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_23",
+    "source_relative": "mw_isolated/spcool_tables/spcool_23",
+    "sha256": "7ad6be6edb55d6edce67d5e800c0a214538679d5a8ceb4f8ab30fd42f05b1c96",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_24",
+    "source_relative": "mw_isolated/spcool_tables/spcool_24",
+    "sha256": "b227030b9ad901f6ea8fa690113596f5c700a43f2656ffabb4ae47c857c902cd",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_25",
+    "source_relative": "mw_isolated/spcool_tables/spcool_25",
+    "sha256": "3834c9ddeb6f1921d1a2cb2bd320f8fdbd4cc82c95d0df1082878c2659c389d1",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_26",
+    "source_relative": "mw_isolated/spcool_tables/spcool_26",
+    "sha256": "d010c170bf00172259b885ad22cf9a6c8513453daebbbed5042e94978f0b895f",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_27",
+    "source_relative": "mw_isolated/spcool_tables/spcool_27",
+    "sha256": "cf4bebd25169a55f666f1f62a5432353e746e2c35d1339062b047bdefc1dd98b",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_28",
+    "source_relative": "mw_isolated/spcool_tables/spcool_28",
+    "sha256": "a196a245b87d5b0068db3351c21da7a806106afcf6d6005a494cd44e6c522b54",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_29",
+    "source_relative": "mw_isolated/spcool_tables/spcool_29",
+    "sha256": "19854133a40aadac4fb609c0efc34e036b6b1287a2a2dc8e50e0e2ebe5abfd0e",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_3",
+    "source_relative": "mw_isolated/spcool_tables/spcool_3",
+    "sha256": "c7ec51d95ec2669afb9006b857acd1f0a49444df242eec006c843efecd1bda5a",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_30",
+    "source_relative": "mw_isolated/spcool_tables/spcool_30",
+    "sha256": "f047f3f5f01b0a44226a8a18b91b231db50e92fc8a471296097b373aad618dd6",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_31",
+    "source_relative": "mw_isolated/spcool_tables/spcool_31",
+    "sha256": "549b90a1160b17d838665555319323d3b61eddc8a1e0d163c02e236deda8eb86",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_32",
+    "source_relative": "mw_isolated/spcool_tables/spcool_32",
+    "sha256": "98dfaa8754ea886961a0f01a2cdb45af11517b68e3a57b4a3e1649f098f9ea39",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_33",
+    "source_relative": "mw_isolated/spcool_tables/spcool_33",
+    "sha256": "85300dcfc44b9e6f641e9d16fea482cb7268dcfe4ea462d8cda5c57161130108",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_34",
+    "source_relative": "mw_isolated/spcool_tables/spcool_34",
+    "sha256": "56c13a27ddc881cdee08d4754be25f3802ff726571208257f862bbc06f3ce211",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_35",
+    "source_relative": "mw_isolated/spcool_tables/spcool_35",
+    "sha256": "38b476a88a2d44f564e2977fd9f3600cf784b58ea15ae8354e31c93097b22189",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_36",
+    "source_relative": "mw_isolated/spcool_tables/spcool_36",
+    "sha256": "f0d78223ac2a14fbf16b71dad64255f1369df7a6c996100491226dcec4503fd8",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_37",
+    "source_relative": "mw_isolated/spcool_tables/spcool_37",
+    "sha256": "3737600561604b73da39709b65d884152fc9939a1d7284b08eec2ab721da8877",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_38",
+    "source_relative": "mw_isolated/spcool_tables/spcool_38",
+    "sha256": "95d4c5efaf71fb6853f3dd1d2847131f8d27bcba439f10f34af4336e79de3839",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_39",
+    "source_relative": "mw_isolated/spcool_tables/spcool_39",
+    "sha256": "ecd9635bb0b72572ee75b7112d5995498a61f93c311c9ef82237b13100518143",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_4",
+    "source_relative": "mw_isolated/spcool_tables/spcool_4",
+    "sha256": "dc4bfb2a7490d2eb4a6ca9589c7fe23376171f8ebd07750f6d1bd717b42e890a",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_40",
+    "source_relative": "mw_isolated/spcool_tables/spcool_40",
+    "sha256": "73b0f1752d5a951c89cf03e4a923172e5adccc40652098b2fbef46f8df993a07",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_41",
+    "source_relative": "mw_isolated/spcool_tables/spcool_41",
+    "sha256": "96364846f5b752b8ae1cc639175a58220f1017b638d4ffa78b46d5bbe4c0f597",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_42",
+    "source_relative": "mw_isolated/spcool_tables/spcool_42",
+    "sha256": "5ac20ae276489471ac209b7b8b91baff2a70b06cc6cd68e9a51a9e8e4b4342a6",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_43",
+    "source_relative": "mw_isolated/spcool_tables/spcool_43",
+    "sha256": "7009fd0951758abe5cd613c2a6156696864afcc6422a83a22a70706f82044aa9",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_44",
+    "source_relative": "mw_isolated/spcool_tables/spcool_44",
+    "sha256": "2ec4b25727dd9c2b85243273c29a1a1efc0d1270804f861f114ea045051fb159",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_45",
+    "source_relative": "mw_isolated/spcool_tables/spcool_45",
+    "sha256": "b8ca14c1533ad8055807880f61c0aeb947d520b0ded428990a38bff449653cd8",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_46",
+    "source_relative": "mw_isolated/spcool_tables/spcool_46",
+    "sha256": "fa7fb68b1e1b0fc04be75ffca9eabf2af386e742eac20e81b9bf6d769075c0ba",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_47",
+    "source_relative": "mw_isolated/spcool_tables/spcool_47",
+    "sha256": "9b21bdd8cb9260242d11003d14ade088fbdca6798b17127fcf459c2b34ef1804",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_48",
+    "source_relative": "mw_isolated/spcool_tables/spcool_48",
+    "sha256": "23ec55a1ac61212a0d4a75c7dfdbef65738d941644498d23bab34ad6c5c13de5",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_5",
+    "source_relative": "mw_isolated/spcool_tables/spcool_5",
+    "sha256": "6acd5f1119f1df58fcc127df3bff55dde670d99893444de7f9d954d5e3b51801",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_6",
+    "source_relative": "mw_isolated/spcool_tables/spcool_6",
+    "sha256": "f2d738aaa06fb505e197432df992dcd3d63642b307f3fc26ca4868916c5b3ed2",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_7",
+    "source_relative": "mw_isolated/spcool_tables/spcool_7",
+    "sha256": "0c09edd65ec3f92823ddfebd20d35aac73bd75353ed95462f55b46e02da335c5",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_8",
+    "source_relative": "mw_isolated/spcool_tables/spcool_8",
+    "sha256": "89f0527d6f24989be9ab36644092f90fff0c78883de3f9c36c31fefd693d48b0",
+    "size": 288640,
+    "role": "cooling_resource"
+  },
+  {
+    "path": "resources/spcool_tables/spcool_9",
+    "source_relative": "mw_isolated/spcool_tables/spcool_9",
+    "sha256": "dff5b8846e1621c560d9b0bc34a6d2d6bd4cbfd8deb57af4e03856c6277ec20c",
+    "size": 288640,
+    "role": "cooling_resource"
+  }
+]

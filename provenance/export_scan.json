@@ -1,0 +1,6 @@
+{
+  "source_python_count": 144,
+  "syntax_errors": [],
+  "high_confidence_secret_findings": [],
+  "note": "Regex scan plus review of credential-related identifiers; not a proof of absence of all secrets."
+}

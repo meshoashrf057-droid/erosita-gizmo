@@ -1,0 +1,222 @@
+--- original/Config.sh
++++ source/Config.sh
+@@ -20,19 +20,19 @@
+ INIT_STELLAR_METALS_AGES_DEFINED
+ 
+ # ---------------- 黑洞基础与吸积 ----------------
+-BLACK_HOLES
+-BH_REPOSITION_ON_POTMIN=2
+-
+-#BH_DEBUG_FIX_MDOT_MBH=(0.00124)
+-#BH_WIND_SPAWN=2
+-#BH_FOLLOW_ACCRETED_ANGMOM=1
+-#BH_FOLLOW_ACCRETED_MOMENTUM
+-#BH_FOLLOW_ACCRETED_COM
+-#BH_FB_COLLIMATED
+-
+-#BH_WAKEUP_GAS
+-#BH_INTERACT_ON_GAS_TIMESTEP
+-#BH_OUTPUT_MOREINFO
++# Isolated faithful legacy fixed-external-supply jet; no natural accretion or swallowing preset.
++SINK_PARTICLES
++SINK_REPOSITION_ON_POTMIN
++SINK_DEBUG_FIX_MDOT_MBH=(0.00124)
++SINK_WIND_SPAWN=2
++SINK_FOLLOW_ACCRETED_ANGMOM=1
++SINK_FOLLOW_ACCRETED_MOMENTUM
++SINK_FOLLOW_ACCRETED_COM
++SINK_FB_COLLIMATED
++SINK_WAKEUP_GAS
++SINK_INTERACT_ON_GAS_TIMESTEP
++SINK_OUTPUT_MOREINFO
++OUTPUT_UNSPAWNED_SINKMASS
+ 
+ 
+ #--------------------------- 恒星形成 ---------------------------
+--- original/core/init.cc
++++ source/core/init.cc
+@@ -441,6 +441,9 @@
+ 
+ 
+ #ifdef SINK_PARTICLES
++#ifdef SINK_WAKEUP_GAS
++        if(P[i].Type == 0) {P[i].LowestSinkTimeBin = TIMEBINS;}
++#endif
+ #if (SINGLE_STAR_SINK_FORMATION & 8)
+         P[i].Sink_Ngb_Flag = 0;
+ #endif
+--- original/core/begrun.cc
++++ source/core/begrun.cc
+@@ -1642,6 +1642,17 @@
+         strcpy(tag[nt], "SinkFeedbackFactor");
+         addr[nt] = &All.SinkFeedbackFactor;
+         id[nt++] = REAL;
++
++#ifdef SINK_DEBUG_FIX_MDOT_MBH
++        strcpy(tag[nt], "Sink_fb_duty_cycle");
++        strcpy(alternate_tag[nt], "BH_fb_duty_cycle");
++        addr[nt] = &All.Sink_fb_duty_cycle;
++        id[nt++] = REAL;
++        strcpy(tag[nt], "Sink_fb_period");
++        strcpy(alternate_tag[nt], "BH_fb_period");
++        addr[nt] = &All.Sink_fb_period;
++        id[nt++] = REAL;
++#endif
+ 
+ #if defined(SINK_SEED_FROM_FOF) || defined(SINK_SEED_FROM_LOCALGAS)
+         strcpy(tag[nt], "SeedSinkMassSigma");
+@@ -2711,6 +2722,16 @@
+     All.Grain_Internal_Density=1; All.Grain_Size_Min=1; All.Grain_Size_Max=1; All.Grain_Size_Spectrum_Powerlaw=1; /* in this case these are never used, so we treat them as dummy variables */
+ #endif
+ 
++#ifdef SINK_DEBUG_FIX_MDOT_MBH
++    /* Invalid legacy duty/period has no meaningful fixed-supply interpretation. */
++    if(!(All.Sink_fb_duty_cycle > 0) || !isfinite(All.Sink_fb_duty_cycle) ||
++       !(All.Sink_fb_period > 0) || !isfinite(All.Sink_fb_period))
++    {
++        if(ThisTask==0) {printf("Fixed external supply requires finite positive Sink_fb_duty_cycle and Sink_fb_period.\n");}
++        endrun(1);
++    }
++#endif
++
+     /* now we're going to do a bunch of checks */
+     if(All.MaxMemSize > safe_memorypertask)
+     {
+--- original/core/timestep.cc
++++ source/core/timestep.cc
+@@ -956,6 +956,16 @@
+     
+     
+ #ifdef SINK_PARTICLES
++#ifdef SINK_WAKEUP_GAS
++    /* Legacy BH_WAKEUP_GAS: cap gas to 0.99*(2*the lowest interacting sink step).
++       The unset sentinel is not a real bin and must not be shifted. Reset only
++       when the cap is applied, preserving the legacy lifetime of a recorded bin. */
++    if(P[p].Type == 0 && P[p].LowestSinkTimeBin >= 0 && P[p].LowestSinkTimeBin < TIMEBINS)
++    {
++        const double dt_sink = 2. * GET_PHYSICAL_TIMESTEP_FROM_TIMEBIN(P[p].LowestSinkTimeBin,p);
++        if(dt > dt_sink) {dt = 0.99 * dt_sink; P[p].LowestSinkTimeBin = TIMEBINS;}
++    }
++#endif
+     if(P[p].Type == 5)
+     {
+ #if !defined(SINGLE_STAR_SINK_DYNAMICS) && defined(GALSF)
+--- original/declarations/particle_data.h
++++ source/declarations/particle_data.h
+@@ -185,6 +185,9 @@
+ #endif
+ #if defined(SINK_SWALLOWGAS) && !defined(SINK_GRAVCAPTURE_GAS)
+     MyFloat Sink_AccretionDeficit; /* difference between continuously-accreted and discretely-accreted masses, needs to be evolved to ensure exact conservation with some modules */
++#endif
++#ifdef SINK_WAKEUP_GAS
++    int LowestSinkTimeBin; /*!< Lowest interacting sink bin for legacy gas-step cap; TIMEBINS is unset. */
+ #endif
+ #ifdef SINK_FOLLOW_ACCRETED_ANGMOM
+     MyFloat Sink_Specific_AngMom[3];
+--- original/declarations/allvars.h
++++ source/declarations/allvars.h
+@@ -918,6 +918,10 @@
+   double SinkMaxAccretionRadius;
+   double SinkEddingtonFactor;	    /*!< Factor above Eddington */
+   double SinkRadiativeEfficiency;   /*!< Radiative efficiency determined by the spin value, default value is 0.1 */
++#ifdef SINK_DEBUG_FIX_MDOT_MBH
++  double Sink_fb_duty_cycle; /*!< Legacy external-supply duty; >=1 is continuous. */
++  double Sink_fb_period; /*!< Legacy period in physical Gyr; phase uses absolute All.Time. */
++#endif
+ #endif
+ 
+ #if defined(EOS_TILLOTSON) || defined(EOS_ELASTIC)
+--- original/sinks/sink_swallow_and_kick.cc
++++ source/sinks/sink_swallow_and_kick.cc
+@@ -1104,7 +1104,9 @@
+ #ifdef HYDRO_MESHLESS_FINITE_VOLUME
+         CellP[j].MassTrue = P[j].Mass;
+ #endif
++#ifndef SINK_DEBUG_FIX_MDOT_MBH
+         P[i].Mass -= P[j].Mass; /* make sure the operation is mass conserving! */
++#endif
+         P[i].unspawned_wind_mass -= P[j].Mass; /* remove the mass successfully spawned, to update the remaining unspawned mass */
+ 
+ #if defined(METALS) && (defined(SINGLE_STAR_FB_JETS) || defined(SINGLE_STAR_FB_WINDS) || defined(SINGLE_STAR_FB_SNE) || defined(SNE_NONSINK_SPAWN) || (SINGLE_STAR_AND_SSP_NUCLEAR_ZOOM_SPECIALBOUNDARIES >= 4))
+--- original/sinks/sink_environment.cc
++++ source/sinks/sink_environment.cc
+@@ -36,6 +36,9 @@
+ #if (ADAPTIVE_GRAVSOFT_FORALL & 32)
+     MyFloat AGS_KernelRadius;
+ #endif
++#ifdef SINK_WAKEUP_GAS
++    int TimeBin;
++#endif
+ #if defined(SINK_RETURN_ANGMOM_TO_GAS)
+     MyFloat Sink_Specific_AngMom[3];
+ #endif
+@@ -47,6 +50,9 @@
+ {
+     int k; for(k=0;k<3;k++) {in->Pos[k]=P[i].Pos[k]; in->Vel[k]=P[i].Vel[k];} /* good example - always needed */
+     in->KernelRadius = P[i].KernelRadius; in->ID = P[i].ID;
++#ifdef SINK_WAKEUP_GAS
++    in->TimeBin = P[i].TimeBin;
++#endif
+ #if defined(SINK_GRAVCAPTURE_GAS) || (SINK_GRAVACCRETION == 8)
+     in->Mass = P[i].Mass;
+ #endif
+@@ -180,6 +186,19 @@
+             for(n = 0; n < numngb; n++)
+             {
+                 j = ngblist[n]; /* since we use the -threaded- version above of ngb-finding, its super-important this is the lower-case ngblist here! */
++#ifdef SINK_WAKEUP_GAS
++                /* Only gas consumes this field. Protect the comparison and update together:
++                   the legacy separate comparison/atomic-write was not a thread-safe minimum. */
++                if(P[j].Type == 0)
++                {
++#ifdef _OPENMP
++#pragma omp critical(fixed_supply_lowest_sink_timebin)
++#endif
++                    {
++                        if(local.TimeBin < P[j].LowestSinkTimeBin) {P[j].LowestSinkTimeBin = local.TimeBin;}
++                    }
++                }
++#endif
+                 if( (P[j].Mass > 0) && (P[j].Type != 5) && (P[j].ID != local.ID) )
+                 {
+                     double wt = P[j].Mass;
+--- original/sinks/sink.cc
++++ source/sinks/sink.cc
+@@ -791,12 +791,27 @@
+         dt = P[n].dt_since_last_gas_search;
+ #endif
+         double dm = P[n].Sink_Mdot * dt;
++#ifdef SINK_DEBUG_FIX_MDOT_MBH
++        /* Faithful BH_DEBUG_FIX_MDOT_MBH port: external supply, not Sink_Mdot or Mdot/Mbh.
++           Preserve the legacy absolute-Time phase; do not subtract the jet start time. */
++        dm = 0;
++        const double period_sink = All.Sink_fb_period / UNIT_TIME_IN_GYR;
++        const double period_sink_on = All.Sink_fb_duty_cycle * period_sink;
++        if(All.Sink_fb_duty_cycle >= 1) {dm = SINK_DEBUG_FIX_MDOT_MBH * dt;}
++        else if(fmod(All.Time, period_sink) < period_sink_on)
++        {
++            dm = 2. * (SINK_DEBUG_FIX_MDOT_MBH / All.Sink_fb_duty_cycle)
++                 * pow(sin(M_PI * All.Time / period_sink_on), 2) * dt;
++        }
++#endif
+         double radiation_loss = evaluate_sink_radiative_efficiency(P[n].Sink_Mdot,P[n].Sink_Mass,n) * dm;
+         if(radiation_loss > DMIN(P[n].Mass,P[n].Sink_Mass)) radiation_loss = DMIN(P[n].Mass,P[n].Sink_Mass);
+ #ifdef SINGLE_STAR_STARFORGE_PROTOSTELLAR_EVOLUTION
+         if(All.SinkRadiativeEfficiency > 0 && All.SinkRadiativeEfficiency < 1 && P[n].ProtoStellarStage != 7) {radiation_loss = 0;} // negligible radiation loss term unless the object is actually a compact relic
+ #endif
++#ifndef SINK_DEBUG_FIX_MDOT_MBH
+         P[n].Mass -= radiation_loss; P[n].Sink_Mass -= radiation_loss;
++#endif
+ 
+ 
+ #if defined(SINGLE_STAR_TIMESTEPPING)
+@@ -822,7 +837,9 @@
+         P[n].Sink_Mass_Reservoir -= dm_wind;
+ #else
+         if(dm_wind > P[n].Sink_Mass) {dm_wind = P[n].Sink_Mass;}
++#ifndef SINK_DEBUG_FIX_MDOT_MBH
+         P[n].Sink_Mass -= dm_wind;
++#endif
+ #endif
+ #if defined(SINGLE_STAR_STARFORGE_PROTOSTELLAR_EVOLUTION)
+ #if defined(SINGLE_STAR_FB_WINDS)

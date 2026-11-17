@@ -1,0 +1,61 @@
+# 初始条件文件
+InitCondFile   ./mw_ic
+
+# 模拟时间设置
+TimeBegin      0.0
+TimeMax        0.8
+TimeOfFirstSnapshot 0.0
+TimeBetSnapshot 0.2
+
+# 输出目录
+OutputDir      ./output
+
+# 引力软化长度（单位：kpc）
+SofteningGas       0.1
+DesNumNgb          64
+SofteningHalo      0.3
+SofteningDisk      0.1
+SofteningBulge     0.1
+SofteningStars     0.1
+SofteningBndry     0.1
+
+# 高精度树参数（需在 Config.sh 中开启 DEVELOPER_MODE）
+ErrTolTheta        0.4
+ErrTolForceAcc     0.0025
+CourantFac         0.1
+
+# 自适应引力更新（可选，不影响默认精度）
+AdaptiveGravityUpdate   1
+GravityUpdateTolerance  0.001
+MaxGravityUpdateStep    0.02
+
+# 时间步长（单位：Gyr）
+MaxSizeTimestep    0.002
+MinSizeTimestep    1e-6
+
+# 输出与重启文件
+SnapshotFileBase   snapshot
+RestartFile        restart
+TimeLimitCPU       86000
+
+# 单位制（1 kpc, 1e10 Msun, 1 km/s）
+UnitLength_in_cm      3.086e21
+UnitMass_in_g         1.989e43
+UnitVelocity_in_cm_per_s 1e5
+
+# 关闭所有冷却、恒星形成与反馈
+COOLING         0
+STARFORMATION   0
+FEEDBACK        0
+MECHANICAL_FEEDBACK 0
+
+# 以下参数在关闭状态下保留默认值
+DensityThresholdForSF   100.0
+SFR_Efficiency          0.15
+SNII_Energy             1.0e51
+SNII_Coupling           1.0
+SNIa_Energy             1.0e51
+SNIa_Coupling           1.0
+SNIa_DelayTime          0.04
+FeedbackCoupling        1.0
+FeedbackRadius          0.1

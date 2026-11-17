@@ -1,0 +1,310 @@
+{
+  "schema": "fixed-supply-stage3-runtime-inputs/v1",
+  "checked_utc": "2026-11-15T05:23:17.261722+00:00",
+  "source_directory": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production",
+  "scope": "Exact accepted orbit TREECOOL and spcool_tables runtime files only",
+  "file_count": 50,
+  "total_bytes": 14159271,
+  "files": [
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/TREECOOL",
+      "relative_path": "TREECOOL",
+      "bytes": 15911,
+      "sha256": "90e1ba179b4c6f3459ad9c6cc350f5c014158c19754d2d78f1b5d37daed7ab3e"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_0",
+      "relative_path": "spcool_tables/spcool_0",
+      "bytes": 288640,
+      "sha256": "46eb3b6ea290041241b32c7144fa99286dedde98c4758e8d3e835575ebfb89a5"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_1",
+      "relative_path": "spcool_tables/spcool_1",
+      "bytes": 288640,
+      "sha256": "b0ed1e1064d4c7839ad862f68cbd0a1c469137ef46d9cd2a489c97740006153b"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_10",
+      "relative_path": "spcool_tables/spcool_10",
+      "bytes": 288640,
+      "sha256": "c1c72a2339f50b774bbb676927007b7b5287cfa2c07aad26a0a29e84e2807068"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_11",
+      "relative_path": "spcool_tables/spcool_11",
+      "bytes": 288640,
+      "sha256": "580881593ff8b1ecc2cbe4c67ab53838f0dac13388a6c18e1da04613e62871b9"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_12",
+      "relative_path": "spcool_tables/spcool_12",
+      "bytes": 288640,
+      "sha256": "05c87114dcd58496d3de82b106f2e8c3bc23417bb6424a6d676d34cce98c0bb4"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_13",
+      "relative_path": "spcool_tables/spcool_13",
+      "bytes": 288640,
+      "sha256": "2dac80d9ec5e0b1ce22dcc4a8b17379cd07663758776d8e4cb1ed01d5a0a9714"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_14",
+      "relative_path": "spcool_tables/spcool_14",
+      "bytes": 288640,
+      "sha256": "49fa4e1126416e0dbf2368d80e78fa6f2d4e90a8360b7810d8366d7a2d0c0a3f"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_15",
+      "relative_path": "spcool_tables/spcool_15",
+      "bytes": 288640,
+      "sha256": "8b5891a90c511d497da922f71fdb5625eb834aa287c908b33215c8a2b6ce723d"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_16",
+      "relative_path": "spcool_tables/spcool_16",
+      "bytes": 288640,
+      "sha256": "98adfbc9ae633dec7c40297b6012038d5404d31c897a6faaf3a8c620416a07e2"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_17",
+      "relative_path": "spcool_tables/spcool_17",
+      "bytes": 288640,
+      "sha256": "ae0dbbd0da5e8212bcd53b82b8573244984c1f56c3be246d7b2c2039efbe50ab"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_18",
+      "relative_path": "spcool_tables/spcool_18",
+      "bytes": 288640,
+      "sha256": "5b78e05996bfaf7d365e2d03743f3a59e2a8b9d6a85a9fbfcbf8cac5db41b55e"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_19",
+      "relative_path": "spcool_tables/spcool_19",
+      "bytes": 288640,
+      "sha256": "379e9a9b5dfab515cb3799e621eb9847010f8a04b2803c89c9ae231a793f957d"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_2",
+      "relative_path": "spcool_tables/spcool_2",
+      "bytes": 288640,
+      "sha256": "70d00f7cc00e9f1a6611a2dd45c4f439befafa05916c0b333e3737392c22868e"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_20",
+      "relative_path": "spcool_tables/spcool_20",
+      "bytes": 288640,
+      "sha256": "16cea9cc5788696b7d55303d6ef49e8c92eefb5408a1081287479b7fb38e2f08"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_21",
+      "relative_path": "spcool_tables/spcool_21",
+      "bytes": 288640,
+      "sha256": "f5b9d74eba582c8a386adce5ab4821a7c993d5d42ad886c5c34ad99f06b55b06"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_22",
+      "relative_path": "spcool_tables/spcool_22",
+      "bytes": 288640,
+      "sha256": "56c96012dfd96c519e1d1465cd92906cf410ccc48f5d76282020bc51b38f5575"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_23",
+      "relative_path": "spcool_tables/spcool_23",
+      "bytes": 288640,
+      "sha256": "7ad6be6edb55d6edce67d5e800c0a214538679d5a8ceb4f8ab30fd42f05b1c96"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_24",
+      "relative_path": "spcool_tables/spcool_24",
+      "bytes": 288640,
+      "sha256": "b227030b9ad901f6ea8fa690113596f5c700a43f2656ffabb4ae47c857c902cd"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_25",
+      "relative_path": "spcool_tables/spcool_25",
+      "bytes": 288640,
+      "sha256": "3834c9ddeb6f1921d1a2cb2bd320f8fdbd4cc82c95d0df1082878c2659c389d1"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_26",
+      "relative_path": "spcool_tables/spcool_26",
+      "bytes": 288640,
+      "sha256": "d010c170bf00172259b885ad22cf9a6c8513453daebbbed5042e94978f0b895f"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_27",
+      "relative_path": "spcool_tables/spcool_27",
+      "bytes": 288640,
+      "sha256": "cf4bebd25169a55f666f1f62a5432353e746e2c35d1339062b047bdefc1dd98b"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_28",
+      "relative_path": "spcool_tables/spcool_28",
+      "bytes": 288640,
+      "sha256": "a196a245b87d5b0068db3351c21da7a806106afcf6d6005a494cd44e6c522b54"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_29",
+      "relative_path": "spcool_tables/spcool_29",
+      "bytes": 288640,
+      "sha256": "19854133a40aadac4fb609c0efc34e036b6b1287a2a2dc8e50e0e2ebe5abfd0e"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_3",
+      "relative_path": "spcool_tables/spcool_3",
+      "bytes": 288640,
+      "sha256": "c7ec51d95ec2669afb9006b857acd1f0a49444df242eec006c843efecd1bda5a"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_30",
+      "relative_path": "spcool_tables/spcool_30",
+      "bytes": 288640,
+      "sha256": "f047f3f5f01b0a44226a8a18b91b231db50e92fc8a471296097b373aad618dd6"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_31",
+      "relative_path": "spcool_tables/spcool_31",
+      "bytes": 288640,
+      "sha256": "549b90a1160b17d838665555319323d3b61eddc8a1e0d163c02e236deda8eb86"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_32",
+      "relative_path": "spcool_tables/spcool_32",
+      "bytes": 288640,
+      "sha256": "98dfaa8754ea886961a0f01a2cdb45af11517b68e3a57b4a3e1649f098f9ea39"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_33",
+      "relative_path": "spcool_tables/spcool_33",
+      "bytes": 288640,
+      "sha256": "85300dcfc44b9e6f641e9d16fea482cb7268dcfe4ea462d8cda5c57161130108"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_34",
+      "relative_path": "spcool_tables/spcool_34",
+      "bytes": 288640,
+      "sha256": "56c13a27ddc881cdee08d4754be25f3802ff726571208257f862bbc06f3ce211"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_35",
+      "relative_path": "spcool_tables/spcool_35",
+      "bytes": 288640,
+      "sha256": "38b476a88a2d44f564e2977fd9f3600cf784b58ea15ae8354e31c93097b22189"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_36",
+      "relative_path": "spcool_tables/spcool_36",
+      "bytes": 288640,
+      "sha256": "f0d78223ac2a14fbf16b71dad64255f1369df7a6c996100491226dcec4503fd8"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_37",
+      "relative_path": "spcool_tables/spcool_37",
+      "bytes": 288640,
+      "sha256": "3737600561604b73da39709b65d884152fc9939a1d7284b08eec2ab721da8877"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_38",
+      "relative_path": "spcool_tables/spcool_38",
+      "bytes": 288640,
+      "sha256": "95d4c5efaf71fb6853f3dd1d2847131f8d27bcba439f10f34af4336e79de3839"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_39",
+      "relative_path": "spcool_tables/spcool_39",
+      "bytes": 288640,
+      "sha256": "ecd9635bb0b72572ee75b7112d5995498a61f93c311c9ef82237b13100518143"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_4",
+      "relative_path": "spcool_tables/spcool_4",
+      "bytes": 288640,
+      "sha256": "dc4bfb2a7490d2eb4a6ca9589c7fe23376171f8ebd07750f6d1bd717b42e890a"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_40",
+      "relative_path": "spcool_tables/spcool_40",
+      "bytes": 288640,
+      "sha256": "73b0f1752d5a951c89cf03e4a923172e5adccc40652098b2fbef46f8df993a07"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_41",
+      "relative_path": "spcool_tables/spcool_41",
+      "bytes": 288640,
+      "sha256": "96364846f5b752b8ae1cc639175a58220f1017b638d4ffa78b46d5bbe4c0f597"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_42",
+      "relative_path": "spcool_tables/spcool_42",
+      "bytes": 288640,
+      "sha256": "5ac20ae276489471ac209b7b8b91baff2a70b06cc6cd68e9a51a9e8e4b4342a6"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_43",
+      "relative_path": "spcool_tables/spcool_43",
+      "bytes": 288640,
+      "sha256": "7009fd0951758abe5cd613c2a6156696864afcc6422a83a22a70706f82044aa9"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_44",
+      "relative_path": "spcool_tables/spcool_44",
+      "bytes": 288640,
+      "sha256": "2ec4b25727dd9c2b85243273c29a1a1efc0d1270804f861f114ea045051fb159"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_45",
+      "relative_path": "spcool_tables/spcool_45",
+      "bytes": 288640,
+      "sha256": "b8ca14c1533ad8055807880f61c0aeb947d520b0ded428990a38bff449653cd8"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_46",
+      "relative_path": "spcool_tables/spcool_46",
+      "bytes": 288640,
+      "sha256": "fa7fb68b1e1b0fc04be75ffca9eabf2af386e742eac20e81b9bf6d769075c0ba"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_47",
+      "relative_path": "spcool_tables/spcool_47",
+      "bytes": 288640,
+      "sha256": "9b21bdd8cb9260242d11003d14ade088fbdca6798b17127fcf459c2b34ef1804"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_48",
+      "relative_path": "spcool_tables/spcool_48",
+      "bytes": 288640,
+      "sha256": "23ec55a1ac61212a0d4a75c7dfdbef65738d941644498d23bab34ad6c5c13de5"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_5",
+      "relative_path": "spcool_tables/spcool_5",
+      "bytes": 288640,
+      "sha256": "6acd5f1119f1df58fcc127df3bff55dde670d99893444de7f9d954d5e3b51801"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_6",
+      "relative_path": "spcool_tables/spcool_6",
+      "bytes": 288640,
+      "sha256": "f2d738aaa06fb505e197432df992dcd3d63642b307f3fc26ca4868916c5b3ed2"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_7",
+      "relative_path": "spcool_tables/spcool_7",
+      "bytes": 288640,
+      "sha256": "0c09edd65ec3f92823ddfebd20d35aac73bd75353ed95462f55b46e02da335c5"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_8",
+      "relative_path": "spcool_tables/spcool_8",
+      "bytes": 288640,
+      "sha256": "89f0527d6f24989be9ab36644092f90fff0c78883de3f9c36c31fefd693d48b0"
+    },
+    {
+      "source": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/spcool_tables/spcool_9",
+      "relative_path": "spcool_tables/spcool_9",
+      "bytes": 288640,
+      "sha256": "dff5b8846e1621c560d9b0bc34a6d2d6bd4cbfd8deb57af4e03856c6277ec20c"
+    }
+  ]
+}

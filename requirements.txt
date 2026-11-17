@@ -1,0 +1,12 @@
+# Portable scientific Python dependencies; use Python 3.12.
+# Source Linux versions are recorded separately, not a macOS lock.
+numpy
+scipy
+h5py
+matplotlib
+yt
+astropy
+healpy
+Pillow
+unyt
+tqdm

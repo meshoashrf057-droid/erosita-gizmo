@@ -1,0 +1,2 @@
+# Optional ionization / FIRE helper workflow; may require separate Trident data setup.
+trident

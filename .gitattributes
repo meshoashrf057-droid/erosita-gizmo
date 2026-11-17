@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.h5 binary
+*.patch text eol=lf
+resources/spcool_tables/* binary

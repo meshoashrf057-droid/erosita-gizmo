@@ -1,0 +1,167 @@
+{
+  "schema": "isolated-fixed-supply-cpp-stage-contract/v1",
+  "created_utc": "2026-11-15T04:50:04.416716+00:00",
+  "status": "prepared_contract_not_executed",
+  "runtime_validated": false,
+  "source_port_manifest": "/home/xingdi/gizmo-runs/compat_validation/20261115_fixed_supply_cpp_port_review01/source_port_manifest.json",
+  "source_port_manifest_sha256": "09621c0f0d1220c08e3fb78d9c5e3abe18890f529d15de2a8b67b82367f545c4",
+  "input_endpoint": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/output/snapshot_011.hdf5",
+  "input_endpoint_sha256_from_gate": "67520602f3b2a591299814b89d348bcd3069e26066c42941a99824adf3fce95b",
+  "current_nonjet_param_base": "/home/xingdi/gizmo-runs/mw_isolated/cgm3_n3000_orbits_cpp_20261105_084436/local02_lmc_y_p05/production/stage2.param",
+  "current_nonjet_param_base_sha256": "0d891a2a0f8a1077fb0e68481989ab47e3b6bedd655cdfda06b644f3427a2d93",
+  "timeline": {
+    "TimeBegin": 1.6363392421373844,
+    "TimeOfFirstSnapshot": 1.6363392421373844,
+    "duration_physical_Myr": 30.0,
+    "unit_time_Gyr": 0.9777923542981722,
+    "duration_code": 0.030681360790075957,
+    "TimeMax": 1.6670206029274603,
+    "TimeBetSnapshot": 0.001,
+    "output_interval_physical_Myr": 0.9777923542981722,
+    "restart_flag_required": 2,
+    "old_binary_restart_allowed": false,
+    "authority_note": "Later root AGENTS explicit 30 physical Myr supersedes old POST_T13_PIPELINE .03-code duration."
+  },
+  "units": {
+    "UnitLength_in_cm": 3.085678e+21,
+    "UnitMass_in_g": 1.989e+43,
+    "UnitVelocity_in_cm_per_s": 100000.0,
+    "GYR_S": 3.15576e+16,
+    "project_MSUN_G": 1.98841586e+33
+  },
+  "parameter_translations": [
+    {
+      "legacy": "SeedBlackHoleMass",
+      "canonical": "SeedSinkMass",
+      "value": 0.0004
+    },
+    {
+      "legacy": "BlackHoleAccretionFactor",
+      "canonical": "SinkAccretionFactor",
+      "value": 0.0
+    },
+    {
+      "legacy": "BlackHoleEddingtonFactor",
+      "canonical": "SinkEddingtonFactor",
+      "value": 0.0
+    },
+    {
+      "legacy": "BH_fb_duty_cycle",
+      "canonical": "Sink_fb_duty_cycle",
+      "value": 1.0
+    },
+    {
+      "legacy": "BH_fb_period",
+      "canonical": "Sink_fb_period",
+      "value": 1.0
+    },
+    {
+      "legacy": "BAL_f_accretion",
+      "canonical": "Sink_accreted_fraction",
+      "value": 0.5
+    },
+    {
+      "legacy": "BAL_v_outflow",
+      "canonical": "Sink_outflow_velocity",
+      "value": 10000.0
+    },
+    {
+      "legacy": "BAL_wind_particle_mass",
+      "canonical": "Sink_outflow_particlemass",
+      "value": 1e-07
+    },
+    {
+      "legacy": "BAL_internal_temperature",
+      "canonical": "Sink_outflow_temperature",
+      "value": 100000000.0
+    },
+    {
+      "legacy": "BlackHoleNgbFactor",
+      "canonical": "SinkNgbFactor",
+      "value": 10.0
+    },
+    {
+      "legacy": "BlackHoleMaxAccretionRadius",
+      "canonical": "SinkMaxAccretionRadius",
+      "value": 0.05
+    },
+    {
+      "legacy": "BlackHoleFeedbackFactor",
+      "canonical": "SinkFeedbackFactor",
+      "value": 1.0
+    },
+    {
+      "legacy": "BlackHoleRadiativeEfficiency",
+      "canonical": "SinkRadiativeEfficiency",
+      "value": 0.1
+    }
+  ],
+  "remove_legacy_alias_duplicates": true,
+  "preserve_current_nonjet_parameters": true,
+  "explicit_preserved_controls": {
+    "CritPhysDensity": 3000,
+    "MaxKernelRadius": 1e+56,
+    "MinSizeTimestep": 1e-12,
+    "MaxSizeTimestep": 0.001,
+    "MinGasKernelRadiusFractional": 1.0,
+    "SofteningGas": 0.005,
+    "SofteningHalo": 0.05,
+    "SofteningDisk": 0.05,
+    "SofteningBulge": 0.05,
+    "SofteningStars": 0.01,
+    "SofteningBndry": 0.01,
+    "MaxMemSize": 1000,
+    "PartAllocFactor": 2.0,
+    "BufferSize": 100,
+    "CpuTimeBetRestartFile": 900
+  },
+  "fixed_external_supply": {
+    "macro": "SINK_DEBUG_FIX_MDOT_MBH",
+    "mass_code_per_time_code": 0.00124,
+    "mdot_field_is_not_supply": true,
+    "supply_does_not_scale_with_bh_mass": true,
+    "duty_phase": "absolute All.Time, including sine argument; no TimeBegin or per-period phase reset",
+    "wind_to_supply_ratio": 1.0,
+    "wind_msun_per_yr": 0.012685354628350857,
+    "wind_cell_code_mass": 1e-07,
+    "wind_cell_msun": 1000.2937715453548,
+    "wind_pair_supply_Myr": 0.15770844424164068,
+    "full_30Myr_supplied_code_mass": 3.8044887379694184e-05,
+    "full_30Myr_supplied_msun": 380560.63885052566,
+    "mass_debit_exemptions": [
+      "BH radiation loss",
+      "BH subgrid wind debit",
+      "BH dynamical spawned-cell debit"
+    ],
+    "reservoir_debit_preserved": true,
+    "legacy_per_step_mass_caps_preserved": true
+  },
+  "axis_correction": {
+    "tool": "/home/xingdi/gizmo-runs/erosita_xray/azaxis.py",
+    "target_format": "cpp",
+    "field": "PartType5/Sink_Specific_AngMom",
+    "code_vector": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "particle_phase_space_rotation": false,
+    "permanent_axis_lock": false
+  },
+  "execution_gates": [
+    "independent source review",
+    "visible build and generated-config audit",
+    "owned full-endpoint IC writer and independent full static review",
+    "separate visible flag2 smoke with actual spawning and mass/reservoir/finite-field checks",
+    "independent smoke review and single-production clearance"
+  ],
+  "forbidden_at_preparation": [
+    "compile",
+    "jet_IC_generation",
+    "smoke",
+    "production",
+    "historical_source_mutation"
+  ],
+  "suggested_build_command": "nice -n 19 make -j2 CONFIG=Config.sh EXEC=GIZMO_fixed_supply_cpp",
+  "build_workdir": "/home/xingdi/gizmo-runs/compat_validation/20261115_fixed_supply_cpp_port_review01/source"
+}

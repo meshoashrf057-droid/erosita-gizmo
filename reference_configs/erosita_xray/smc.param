@@ -1,0 +1,111 @@
+InitCondFile          ./mw_live_cgm_ism_isolated_v3       % 初始条件文件（HDF5格式）
+OutputDir             ./output                  % 输出目录（需预先创建）
+
+%------------------------------------------------------------------------------
+% 2. File formats
+%------------------------------------------------------------------------------
+ICFormat              3                         % 3 = HDF5
+SnapFormat            3                         % 快照也使用HDF5
+
+%------------------------------------------------------------------------------
+% 3. Output parameters
+%------------------------------------------------------------------------------
+RestartFile           restart                   % 重启文件基础名
+SnapshotFileBase      snapshot                  % 快照文件基础名
+OutputListOn          0                         % 0 = 使用TimeOfFirstSnapshot和TimeBetSnapshot控制输出
+TimeOfFirstSnapshot   0.0                       % 第一个快照时间
+TimeBetSnapshot       0.1                      % 快照间隔（0.1 Gyr = 100 Myr）
+NumFilesPerSnapshot   1                         % 每个快照分成几个文件
+NumFilesWrittenInParallel 1                     % 并行写入的文件数
+
+%------------------------------------------------------------------------------
+% 4. Time stepping and run limits
+%------------------------------------------------------------------------------
+TimeLimitCPU          288600                     % 单次运行最大墙钟时间（秒）72h
+CpuTimeBetRestartFile 28800                      % 每8小时写一次重启文件
+ResubmitOn            0                          % 禁止自动重提交
+TimeBegin             0.0                        % 模拟开始时间（Gyr）
+TimeMax               0.6136                        % 模拟结束时间（Gyr）
+MaxSizeTimestep       0.001                      % 最大时间步长
+MinSizeTimestep       4.0e-6                     % 最小时间步长
+
+%------------------------------------------------------------------------------
+% 5. Units and cosmology (non-cosmological)
+%------------------------------------------------------------------------------
+UnitLength_in_cm         3.085678e21            % 1 kpc
+UnitMass_in_g            1.989e43               % 1e10 Msun
+UnitVelocity_in_cm_per_s 1e5                    % 1 km/s
+UnitMagneticField_in_gauss 1.0                  % 磁场占位
+GravityConstantInternal  0                      % 自动计算G
+ComovingIntegrationOn    0                      % 非宇宙学
+BoxSize                  1000.0                 % 盒子大小
+Omega_Matter             0.0
+Omega_Lambda             0.0
+Omega_Baryon             0.0
+OmegaRadiation           0.0
+HubbleParam              1.0
+
+%------------------------------------------------------------------------------
+% 6. Memory and domain decomposition
+%------------------------------------------------------------------------------
+MaxMemSize               2000                   % MB
+PartAllocFactor          2.0
+BufferSize               100
+TreeDomainUpdateFrequency 0.01
+
+%------------------------------------------------------------------------------
+% 7. Hydro solver parameters
+%------------------------------------------------------------------------------
+DesNumNgb                32
+AGS_DesNumNgb            32
+MaxHsml                  250.0
+MinGasHsmlFractional     1.0
+
+%------------------------------------------------------------------------------
+% 8. Gravity softening lengths
+%------------------------------------------------------------------------------
+SofteningGas       0.005     % 气体 (Type 0): 0.1 pc
+SofteningHalo      0.05     % DM: 200 pc
+SofteningDisk      0.05     % Type2, 当前未使用
+SofteningBulge     0.05     % Type3, 当前未使用
+SofteningStars     0.01     % PartType4 stars: 50 pc
+SofteningBndry     0.01     % BH: 10 pc
+
+%------------------------------------------------------------------------------
+% 9. Initial gas temperature and minimum temperature
+%------------------------------------------------------------------------------
+InitGasTemp               0
+MinGasTemp                10.0
+InitMetallicity           0.1
+InitStellarAge            5.0
+
+MaxSfrTimescale       4.0
+TempSupernova         3.0e8
+TempClouds            1000.0
+FactorSN              0.1
+FactorEVP             3000.0
+FactorForSofterEQS    1.0
+
+CritPhysDensity       1000
+SfEffPerFreeFall      1.0
+
+%------------------------------------------------------------------------------
+% 12. Black hole and AGN Feedback parameters (弛豫阶段设置)
+%------------------------------------------------------------------------------
+SeedBlackHoleMass            4.0e-4   % 初始质量 (4e6 M_sun)
+BlackHoleAccretionFactor     0.0      %accreiton
+BlackHoleEddingtonFactor     0.0
+BH_fb_duty_cycle             1.0
+BH_fb_period                 1.0
+
+%机械风 (Kinetic Wind) 规格
+BAL_f_accretion              0.5
+BAL_v_outflow                10000    % 10000 km/s (对标 Mou 2023)
+BAL_wind_particle_mass       1.0e-7   %
+BAL_internal_temperature     1.0e8    % 喷出气体的初始温度
+
+%作用范围与数值保护
+BlackHoleNgbFactor           1.0
+BlackHoleMaxAccretionRadius  0.05      % 允许黑洞跨越吹开的空腔寻找目标，防 NaN
+BlackHoleFeedbackFactor      0.0      % feedback乘数
+BlackHoleRadiativeEfficiency 0.1
